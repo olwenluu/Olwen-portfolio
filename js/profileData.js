@@ -72,10 +72,10 @@ const profileData = {
             quickInfo: [
                 { label: "Chuyên môn", value: "Marketing" },
                 { label: "Nơi làm việc", value: "Cần Thơ / Remote" },
-                { label: "Ngôn ngữ", value: "Tiếng Việt (Mẹ đẻ), Tiếng Anh (IELTS 7.0)" },
+                { label: "Ngôn ngữ", value: "Tiếng Việt, Tiếng Anh" },
                 { label: "Tình trạng", value: "Sẵn sàng hợp tác / Remote" }
             ],
-            galleryTitle: "Khoảnh khắc & Hoạt động thực tế",
+            galleryTitle: "Những khoảnh khắc & Hoạt động thực tế",
             gallerySubtitle: "Một số hình ảnh tại các sự kiện, workshop và hoạt động sáng tạo thường nhật"
         },
 
@@ -94,7 +94,19 @@ const profileData = {
             },
             timeline: [
                 {
-                    period: "2023 - Hiện tại",
+                    period: "Hiện tại",
+                    role: "Deputy Director of Marketing",
+                    company: "CÔNG TY TNHH THÀNH NHÂN EDUCATION",
+                    description: "Hoạch định và xây dựng các chiến dịch Marketing.",
+                    achievements: [
+                        "Chiến dịch Truyền thông: Triển khai chuỗi nội dung 100% Organic Điểm tin - Điểm trường, tiếp cận hiệu quả học sinh mục tiêu mùa cao điểm thi THPT Quốc gia.",
+                        "Tăng trưởng Tiếp cận: Đạt mức tăng trưởng tự nhiên đột phá với 364,3K lượt xem (+500,3%), 126,2K người xem (+572,9%) và 8,5K lượt truy cập (+434,9%).",
+                        "Tối ưu Tương tác: Tối ưu hóa nội dung giúp tăng 788,8% lượt tương tác (1,6K) và 2.700% lượt theo dõi mới (450 followers) mà không cần chạy quảng cáo."
+                    ],
+                    tags: ["OrganicGrowth", "SocialMediaStrategy", "VisualCommunication"]
+                },
+                {
+                    period: "2023 - 2026",
                     role: "Marketing Executive",
                     company: "CÔNG TY TNHH NHÀ HÀNG KHÁCH SẠN VÀ DU LỊCH Hải Âu Cần Thơ",
                     description: "Chịu trách nhiệm hoạch định và điều phối chiến lược tiếp thị đa kênh cho 3 thương hiệu trực thuộc Công ty.",
@@ -255,38 +267,23 @@ const profileData = {
                     degree: "Cử nhân Kinh doanh quốc tế",
                     school: "Đại học Cần Thơ (CTU)",
                     period: "2018 - 2022",
-                    grade: "Tốt nghiệp loại Giỏi (GPA: 3.6/4.0)",
-                    details: "Chuyên ngành Marketing số & Nghiên cứu hành vi người tiêu dùng. Giải Nhì Nghiên cứu khoa học sinh viên cấp Viện."
+                    details: "Đạt thành tích nổi bật tại cuộc thi Starship - Star Awards năm 2020."
                 }
             ],
             certifications: [
                 {
-                    name: "Google Ads Search & Measurement Certification",
-                    issuer: "Google Skillshop",
-                    year: "2024",
+                    name: "Performance Creative Certification",
+                    issuer: "GIGAN JSC",
+                    year: "2025",
                     icon: "award",
                     code: "Verified Certificate"
                 },
                 {
-                    name: "Meta Certified Digital Marketing Associate",
-                    issuer: "Meta Blueprint",
-                    year: "2024",
-                    icon: "award",
-                    code: "Credential ID: META-94812"
-                },
-                {
-                    name: "HubSpot Inbound Marketing & Content Marketing",
-                    issuer: "HubSpot Academy",
+                    name: "Illustrator Graphics Basic to Intermediate",
+                    issuer: "Keyframe Multimedia School",
                     year: "2023",
                     icon: "award",
-                    code: "Honors Graduate"
-                },
-                {
-                    name: "Google Analytics 4 (GA4) Individual Qualification",
-                    issuer: "Google Skillshop",
-                    year: "2023",
-                    icon: "award",
-                    code: "Advanced Level"
+                    code: "Verified Certificate"
                 }
             ]
         },
@@ -335,13 +332,13 @@ const profileData = {
 
         hero: {
             greeting: "Hello, I am",
-            name: "Yen Luu (Olwen)",
+            name: "Olwen Luu",
             typewriterPrefix: "I am a ",
             roles: [
-                "Digital Marketing Specialist",
                 "Content & Brand Strategist",
-                "Performance Ads Expert",
-                "Growth & Campaign Manager"
+                "Digital Marketing Strategist",
+                "Growth & Campaign Specialist",
+                "Performance Ads"
             ],
             tagline: "Bridging creative storytelling and data-driven analytics to craft high-impact marketing campaigns and drive sustainable revenue growth.",
             ctaProjects: "Explore Campaigns",
