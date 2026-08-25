@@ -10,7 +10,7 @@ const profileData = {
     config: {
         defaultLang: "vi", // "vi" hoặc "en"
         defaultTheme: "light", // "dark" hoặc "light"
-        avatarUrl: "assets/images/avatar.png",
+        avatarUrl: "assets/images/avatar.png", // Đường dẫn ảnh đại diện (file .png, .jpg hoặc link online)
         email: "olwenluu@gmail.com",
         phone: "+84 908 613 416",
         location: {
@@ -22,7 +22,7 @@ const profileData = {
             facebook: "https://www.facebook.com/yenluu1303/",
             instagram: "https://www.instagram.com/py03/",
             tiktok: "https://www.tiktok.com/@betoyen",
-            email: "olwenluu@gmail.com"
+            email: "mailto:olwenluu@gmail.com"
         },
         cvUrl: "#contact" // Đường dẫn tải CV (file PDF hoặc link Google Drive)
     },
@@ -45,7 +45,7 @@ const profileData = {
             typewriterPrefix: "Tôi là ",
             roles: [
                 "Content & Brand Strategist",
-                "Digital Marketing Specialist",
+                "Digital Marketing Strategist",
                 "Growth & Campaign Specialist",
                 "Performance Ads"
             ],
@@ -59,20 +59,20 @@ const profileData = {
 
         about: {
             sectionBadge: "Về bản thân",
-            title: "Kiến tạo giá trị qua từng dự án",
-            subtitle: "Kết nối cảm xúc thương hiệu với khách hàng mục tiêu",
+            title: "Đam mê kiến tạo giá trị qua từng chiến dịch",
+            subtitle: "Hành trình kết nối cảm xúc thương hiệu với khách hàng mục tiêu",
             bioParagraph1: "Chào bạn! Tôi là một chuyên viên <strong>Marketing</strong> với hơn 3+ năm kinh nghiệm thực chiến trong việc hoạch định chiến lược, triển khai chiến dịch truyền thông đa kênh (Omnichannel) và tối ưu hóa hiệu suất chuyển đổi số.",
             bioParagraph2: "Triết lý làm việc của tôi: <em>'Mọi ý tưởng sáng tạo phải được neo giữ bởi dữ liệu thực tế và đo lường bằng kết quả kinh doanh'</em>. Tôi có thế mạnh đồng thời ở cả hai mảng: <strong>Branding & Storytelling</strong> (kể câu chuyện thương hiệu chạm đến trái tim) và <strong>Performance Marketing</strong> (quản lý ngân sách quảng cáo tối ưu ROI/ROAS).",
             stats: [
                 { value: "3+", label: "Năm kinh nghiệm", icon: "award" },
                 { value: "50+", label: "Chiến dịch thực thi", icon: "rocket" },
                 { value: "350%", label: "Tăng trưởng ROAS TB", icon: "trending-up" },
-                { value: "10+", label: "Thương hiệu đồng hành", icon: "briefcase" }
+                { value: "15+", label: "Thương hiệu đồng hành", icon: "briefcase" }
             ],
             quickInfo: [
-                { label: "Chuyên môn", value: "Social Media Marketing Specialist" },
+                { label: "Chuyên môn", value: "Marketing" },
                 { label: "Nơi làm việc", value: "Cần Thơ / Remote" },
-                { label: "Ngôn ngữ", value: "Tiếng Việt (Mẹ đẻ), Tiếng Anh" },
+                { label: "Ngôn ngữ", value: "Tiếng Việt (Mẹ đẻ), Tiếng Anh (IELTS 7.0)" },
                 { label: "Tình trạng", value: "Sẵn sàng hợp tác / Remote" }
             ],
             galleryTitle: "Khoảnh khắc & Hoạt động thực tế",
@@ -97,10 +97,10 @@ const profileData = {
                     period: "2023 - Hiện tại",
                     role: "Marketing Executive",
                     company: "CÔNG TY TNHH NHÀ HÀNG KHÁCH SẠN VÀ DU LỊCH Hải Âu Cần Thơ",
-                    description: "Chịu trách nhiệm hoạch định và điều phối chiến lược tiếp thị đa kênh cho 3 thương hiệu trực thuộc Công ty",
+                    description: "Chịu trách nhiệm hoạch định và điều phối chiến lược tiếp thị đa kênh cho 3 thương hiệu trực thuộc Công ty.",
                     achievements: [
                         "Sản xuất nội dung & Tối ưu hóa phễu chuyển đổi: giúp tăng 100% lượt tương tác.",
-                        "Lập kế hoạch và sáng tạo ấn phẩm đa phương tiện (Copywriting,  thiết kế qua Canva/AI/PTS, dựng video bằng Capcut Pro.).",
+                        "Lập kế hoạch và sáng tạo ấn phẩm đa phương tiện (Copywriting, thiết kế qua Canva/AI/PTS, dựng video bằng CapCut Pro).",
                         "Tìm kiếm đối tác & Nâng tầm thương hiệu: mở rộng các cơ hội hợp tác chiến lược, đưa hình ảnh thương hiệu xuất hiện tại các sự kiện và hội chợ để gia tăng tối đa độ phủ sóng."
                     ],
                     tags: ["Omnichannel Strategy", "Meta Ads", "Google Ads PMax", "Team Leadership"]
@@ -109,12 +109,12 @@ const profileData = {
                     period: "2023",
                     role: "Content & Social Media Lead",
                     company: "CÔNG TY CỔ PHẦN DV TM IVY",
-                    description: "Định hướng nội dung sáng tạo, xây dựng cộng đồng trên Facebook và chiến lược Inbound Marketing dài hạn cho các thương hiệu F&B",
+                    description: "Định hướng nội dung sáng tạo, xây dựng cộng đồng trên Facebook và chiến lược Inbound Marketing dài hạn cho các thương hiệu F&B.",
                     achievements: [
-                        "Chiến lược Inbound Marketing dài hạn: Hoạch định và triển khai hệ sinh thái nội dung đa kênh cho các mô hình F&B, thành công thu hút tệp khách hàng tiềm năng tự nhiên và tối ưu [15-20%] chi phí chuyển đổ.",
-                        "Tối ưu hóa KPIs & Hiệu suất: Thiết lập hệ thống đo lường dữ liệu chiến dịch định kỳ, chủ động đưa ra các cải tiến nội dung kịp thời, duy trì tỷ lệ đạt KPIs trung bình [90-100%] qua các đợt kích hoạt thương hiệu",
-                        "Thiết lập quy trình hợp tác với hơn 20+ KOC/KOL theo mô hình Booking."
-                         "Dẫn dắt đội ngũ 5 thành viên phụ trách Content, Media và Ads."
+                        "Chiến lược Inbound Marketing dài hạn: Hoạch định và triển khai hệ sinh thái nội dung đa kênh cho các mô hình F&B, thành công thu hút tệp khách hàng tiềm năng tự nhiên và tối ưu 15-20% chi phí chuyển đổi.",
+                        "Tối ưu hóa KPIs & Hiệu suất: Thiết lập hệ thống đo lường dữ liệu chiến dịch định kỳ, chủ động đưa ra các cải tiến nội dung kịp thời, duy trì tỷ lệ đạt KPIs trung bình 90-100% qua các đợt kích hoạt thương hiệu.",
+                        "Thiết lập quy trình hợp tác với hơn 20+ KOC/KOL theo mô hình Booking.",
+                        "Dẫn dắt đội ngũ 5 thành viên phụ trách Content, Media và Ads."
                     ],
                     tags: ["Viral Content", "KOC/KOL Booking", "Community Building"]
                 },
@@ -125,7 +125,7 @@ const profileData = {
                     description: "Chịu trách nhiệm lập kế hoạch, phát triển và quản lý nội dung đa kênh (bài PR, Website) và hỗ trợ tổ chức sự kiện kích hoạt thương hiệu trực tiếp.",
                     achievements: [
                         "Tăng trưởng tự nhiên: Thúc đẩy tăng 101,5% lượt tiếp cận (đạt mức 40.000) và 259% lượt truy cập trang (đạt mức 4.000) nhờ chiến lược tối ưu nội dung dài hạn mà không phụ thuộc vào ngân sách quảng cáo.",
-                        "Biên tập & Kể chuyện thương hiệu: Định hình phong cách và chắp bút cho chuỗi nội dung "Chuyện người trẻ khởi nghiệp", ghi nhận mức lan tỏa tốt với 2.500+ lượt xem organic.",
+                        "Biên tập & Kể chuyện thương hiệu: Định hình phong cách và chắp bút cho chuỗi nội dung 'Chuyện người trẻ khởi nghiệp', ghi nhận mức lan tỏa tốt với 2.500+ lượt xem organic.",
                         "Đa nhiệm trong tổ chức sự kiện: Đóng vai trò cầu nối giữa mảng nội dung và sự kiện thực tế. Tham gia hỗ trợ vận hành và trực tiếp ghi hình/sản xuất tư liệu truyền thông cho sự kiện ra mắt sản phẩm với hơn 2.000 người tham dự."
                     ],
                     tags: ["Copywriting", "Event Activation", "Market Research"]
@@ -136,6 +136,7 @@ const profileData = {
                     id: 1,
                     category: "branding",
                     title: "On The Map",
+                    client: "Dự án cộng đồng & Phát triển bền vững",
                     image: "assets/images/gallery-1.jpg",
                     highlight: "+120% Nhận diện",
                     description: "Truyền tải thông điệp truyền thông 'Phát triển bền vững', Social Media kết hợp Dự án cộng đồng.",
@@ -251,9 +252,9 @@ const profileData = {
             certificationsTitle: "Chứng chỉ chuyên nghiệp quốc tế",
             degrees: [
                 {
-                    degree: "Cử nhân Marketing / Quản trị Kinh doanh",
-                    school: "Đại học Kinh tế Quốc dân (NEU)",
-                    period: "2019 - 2023",
+                    degree: "Cử nhân Kinh doanh quốc tế",
+                    school: "Đại học Cần Thơ (CTU)",
+                    period: "2018 - 2022",
                     grade: "Tốt nghiệp loại Giỏi (GPA: 3.6/4.0)",
                     details: "Chuyên ngành Marketing số & Nghiên cứu hành vi người tiêu dùng. Giải Nhì Nghiên cứu khoa học sinh viên cấp Viện."
                 }
@@ -334,20 +335,20 @@ const profileData = {
 
         hero: {
             greeting: "Hello, I am",
-            name: "Olwen Luu",
+            name: "Yen Luu (Olwen)",
             typewriterPrefix: "I am a ",
             roles: [
-                "Content & Brand Strategist",
                 "Digital Marketing Specialist",
-                "Growth & Campaign Manager",
-                "Performance Ads"
+                "Content & Brand Strategist",
+                "Performance Ads Expert",
+                "Growth & Campaign Manager"
             ],
             tagline: "Bridging creative storytelling and data-driven analytics to craft high-impact marketing campaigns and drive sustainable revenue growth.",
             ctaProjects: "Explore Campaigns",
             ctaContact: "Get in Touch",
             statusAvailable: "Available for new projects",
             experienceBadge: "3+ Years Experience",
-            roasBadge: "Remote Job"
+            roasBadge: "350% ROAS Growth"
         },
 
         about: {
@@ -387,54 +388,56 @@ const profileData = {
             },
             timeline: [
                 {
-                    period: "2024 - Present",
-                    role: "Senior Digital Marketing Specialist",
-                    company: "V-Growth Media & Agency",
-                    description: "Responsible for planning and executing multi-channel growth strategies for 10+ corporate clients. Managing monthly ad budgets exceeding $25,000.",
+                    period: "2023 - Present",
+                    role: "Marketing Executive",
+                    company: "Hai Au Can Tho Restaurant, Hotel & Tourism Co., Ltd.",
+                    description: "Responsible for planning and executing omnichannel marketing strategies for 3 corporate member brands.",
                     achievements: [
-                        "Optimized full-funnel conversion rates, decreasing Customer Acquisition Cost (CAC) by 28%.",
-                        "Built real-time automated dashboards (Looker Studio + GA4) to track campaign ROI instantly.",
-                        "Mentored a team of 6 members covering Content, Media Production, and Paid Ads."
+                        "Content production & conversion funnel optimization: Achieved a +100% boost in user engagement.",
+                        "Multimedia asset planning & creation (Copywriting, graphic design via Canva/AI/PTS, video editing with CapCut Pro).",
+                        "Partnership development & brand elevation: Expanded strategic partnerships, showcasing brands at events and trade fairs to maximize reach."
                     ],
                     tags: ["Omnichannel Strategy", "Meta Ads", "Google Ads PMax", "Team Leadership"]
                 },
                 {
-                    period: "2022 - 2024",
+                    period: "2023",
                     role: "Content & Social Media Lead",
-                    company: "Nova Brand Studio",
-                    description: "Directed creative social media strategy, community growth across TikTok, Facebook, and long-term inbound content funnels for lifestyle and F&B brands.",
+                    company: "IVY Commercial Services JSC",
+                    description: "Directed creative content, community growth on Facebook, and long-term Inbound Marketing strategies for F&B brands.",
                     achievements: [
-                        "Generated 15M+ organic impressions on TikTok through short-form viral storytelling.",
-                        "Grew loyal brand following by +150% with an outstanding 8.5% engagement rate.",
-                        "Streamlined influencer onboarding process for 100+ micro & macro creators."
+                        "Long-term Inbound Strategy: Built and executed omnichannel content ecosystems for F&B models, attracting organic leads and optimizing CAC by 15-20%.",
+                        "KPI & Performance Optimization: Established periodic campaign analytics dashboards, continuously improving content to maintain 90-100% KPI achievement rate.",
+                        "Built influencer collaboration workflows with 20+ KOC/KOL creators under Booking models.",
+                        "Led a team of 5 members covering Content, Media, and Ads."
                     ],
-                    tags: ["TikTok Strategy", "Viral Content", "KOL Booking", "Community Building"]
+                    tags: ["Viral Content", "KOC/KOL Booking", "Community Building"]
                 },
                 {
                     period: "2021 - 2022",
-                    role: "Marketing Executive",
-                    company: "Alpha Retail Group",
-                    description: "Assisted in seasonal promotional campaigns, social media management, email marketing automations, and on-ground brand activation events.",
+                    role: "Copywriter & Marketing Support",
+                    company: "MADIAD Trading & Service Co., Ltd.",
+                    description: "Planned, developed, and managed multi-channel content (PR articles, Website) and supported offline brand activations.",
                     achievements: [
-                        "Contributed to a 35% YoY revenue surge during year-end Mega Sale via email and SMS automation.",
-                        "Coordinated 5 offline product activation events engaging over 2,000 attendees."
+                        "Organic Growth: Accelerated reach by +101.5% (40,000+ reach) and page visits by +259% (4,000+ visits) via long-term content strategy without relying on ad budget.",
+                        "Brand Storytelling: Penned the 'Young Entrepreneurs' Stories' series, achieving 2,500+ organic views and strong engagement.",
+                        "Event Operations: Bridged content strategy with live events; supported filming and media production for product launches with 2,000+ attendees."
                     ],
-                    tags: ["Event Activation", "Email Marketing", "Copywriting", "Market Research"]
+                    tags: ["Copywriting", "Event Activation", "Market Research"]
                 }
             ],
             projects: [
                 {
                     id: 1,
                     category: "branding",
-                    title: "Brand Relaunch & New Product Debut Campaign",
-                    client: "EcoLife Living (Sustainable Interior)",
+                    title: "On The Map",
+                    client: "Community Project & Sustainable Development",
                     image: "assets/images/gallery-1.jpg",
                     highlight: "+120% Awareness",
-                    description: "Revamped digital brand identity, crafted the 'Mindful Sustainable Living' key message, and orchestrated a multi-channel launch across digital press and social interactive contests.",
+                    description: "Communicating the 'Sustainable Development' core message via Social Media integrated with Community Initiatives.",
                     results: [
-                        "5.2M+ total impressions across social media platforms",
-                        "Featured on 12 leading national press outlets",
-                        "+40% new customer acquisition in the debut quarter"
+                        "51,000+ Reach and 63,000+ Impressions on Fanpage",
+                        "798+ total engagements, driving interest and event registrations",
+                        "Optimized marketing budget with efficient CPM (~7,300 VND) and a high 3.67% content CTR"
                     ],
                     tags: ["Brand Identity", "PR & Press", "Social Launch", "Storytelling"]
                 },
