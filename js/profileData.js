@@ -101,8 +101,7 @@ const profileData = {
                     achievements: [
                         "Sản xuất nội dung & Tối ưu hóa phễu chuyển đổi: giúp tăng 100% lượt tương tác.",
                         "Lập kế hoạch và sáng tạo ấn phẩm đa phương tiện (Copywriting,  thiết kế qua Canva/AI/PTS, dựng video bằng Capcut Pro.).",
-                        "Tìm kiếm đối tác & Nâng tầm thương hiệu: mở rộng các cơ hội hợp tác chiến lược, đưa hình ảnh thương hiệu xuất hiện tại các sự kiện và hội chợ để gia tăng tối đa độ phủ sóng.",
-                        "Dẫn dắt đội ngũ 5 thành viên phụ trách Content, Media và Ads."
+                        "Tìm kiếm đối tác & Nâng tầm thương hiệu: mở rộng các cơ hội hợp tác chiến lược, đưa hình ảnh thương hiệu xuất hiện tại các sự kiện và hội chợ để gia tăng tối đa độ phủ sóng."
                     ],
                     tags: ["Omnichannel Strategy", "Meta Ads", "Google Ads PMax", "Team Leadership"]
                 },
@@ -112,11 +111,12 @@ const profileData = {
                     company: "CÔNG TY CỔ PHẦN DV TM IVY",
                     description: "Định hướng nội dung sáng tạo, xây dựng cộng đồng trên Facebook và chiến lược Inbound Marketing dài hạn cho các thương hiệu F&B",
                     achievements: [
-                        "Đạt mốc 15 triệu+ lượt xem hữu cơ (organic views) trên TikTok qua chuỗi nội dung viral ngắn.",
-                        "Tăng trưởng 150% lượng người theo dõi trung thành và tỷ lệ tương tác (ER) đạt 8.5%.",
+                        "Chiến lược Inbound Marketing dài hạn: Hoạch định và triển khai hệ sinh thái nội dung đa kênh cho các mô hình F&B, thành công thu hút tệp khách hàng tiềm năng tự nhiên và tối ưu [15-20%] chi phí chuyển đổ.",
+                        "Tối ưu hóa KPIs & Hiệu suất: Thiết lập hệ thống đo lường dữ liệu chiến dịch định kỳ, chủ động đưa ra các cải tiến nội dung kịp thời, duy trì tỷ lệ đạt KPIs trung bình [90-100%] qua các đợt kích hoạt thương hiệu",
                         "Thiết lập quy trình hợp tác với hơn 20+ KOC/KOL theo mô hình Booking."
+                         "Dẫn dắt đội ngũ 5 thành viên phụ trách Content, Media và Ads."
                     ],
-                    tags: ["Viral Content", "KOL Booking", "Community Building"]
+                    tags: ["Viral Content", "KOC/KOL Booking", "Community Building"]
                 },
                 {
                     period: "2021 - 2022",
@@ -135,15 +135,14 @@ const profileData = {
                 {
                     id: 1,
                     category: "branding",
-                    title: "Chiến Dịch Tái Định Vị Thương Hiệu (Brand Relaunch)",
-                    client: "EcoLife Living (Nội thất bền vững)",
+                    title: "On The Map",
                     image: "assets/images/gallery-1.jpg",
                     highlight: "+120% Nhận diện",
-                    description: "Tái cấu trúc nhận diện số, thông điệp truyền thông 'Sống Xanh Tinh Tế' và kế hoạch ra mắt đa kênh trên Báo chí, Social Media kết hợp Minigame tương tác cao.",
+                    description: "Truyền tải thông điệp truyền thông 'Phát triển bền vững', Social Media kết hợp Dự án cộng đồng.",
                     results: [
-                        "5.2M+ lượt tiếp cận trên các nền tảng mạng xã hội",
-                        "Xuất hiện trên 12 đầu báo điện tử uy tín (VnExpress, Cafebiz, Tuổi Trẻ)",
-                        "+40% lượng khách hàng mới trong quý đầu tiên"
+                        "Hơn 51.000 lượt tiếp cận Reach và 63.000 lượt hiển thị Impressions trên fanpage",
+                        "798+ lượt tương tác toàn diện, thúc đẩy hiệu quả mức độ quan tâm bài viết và đăng ký sự kiện",
+                        "Tối ưu hóa ngân sách tiếp thị với CPM tiết kiệm (~7.300 VNĐ) và tỷ lệ CTR nội dung đạt mức cao 3.67%"
                     ],
                     tags: ["Brand Identity", "PR & Press", "Social Launch", "Storytelling"]
                 },
