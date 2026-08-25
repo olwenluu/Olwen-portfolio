@@ -122,12 +122,13 @@ const profileData = {
                     period: "2021 - 2022",
                     role: "Copywriting",
                     company: "CÔNG TY TNHH MTV TM DV MADIAD",
-                    description: "Tham gia triển khai các chiến dịch khuyến mãi mùa vụ, quản lý nội dung Fanpage, Email Marketing và hỗ trợ tổ chức sự kiện kích hoạt thương hiệu trực tiếp (Offline Activations).",
+                    description: "Chịu trách nhiệm lập kế hoạch, phát triển và quản lý nội dung đa kênh (bài PR, Website) và hỗ trợ tổ chức sự kiện kích hoạt thương hiệu trực tiếp.",
                     achievements: [
-                        "Đóng góp tăng 35% doanh thu trong đợt Mega Sale cuối năm qua phễu Email & SMS Automation.",
-                        "Điều phối trơn tru 5 sự kiện offline ra mắt dòng sản phẩm mới thu hút hơn 2.000 khách tham dự."
+                        "Tăng trưởng tự nhiên: Thúc đẩy tăng 101,5% lượt tiếp cận (đạt mức 40.000) và 259% lượt truy cập trang (đạt mức 4.000) nhờ chiến lược tối ưu nội dung dài hạn mà không phụ thuộc vào ngân sách quảng cáo.",
+                        "Biên tập & Kể chuyện thương hiệu: Định hình phong cách và chắp bút cho chuỗi nội dung "Chuyện người trẻ khởi nghiệp", ghi nhận mức lan tỏa tốt với 2.500+ lượt xem organic.",
+                        "Đa nhiệm trong tổ chức sự kiện: Đóng vai trò cầu nối giữa mảng nội dung và sự kiện thực tế. Tham gia hỗ trợ vận hành và trực tiếp ghi hình/sản xuất tư liệu truyền thông cho sự kiện ra mắt sản phẩm với hơn 2.000 người tham dự."
                     ],
-                    tags: ["Event Activation", "Email Marketing", "Copywriting", "Market Research"]
+                    tags: ["Copywriting", "Event Activation", "Market Research"]
                 }
             ],
             projects: [
@@ -334,20 +335,20 @@ const profileData = {
 
         hero: {
             greeting: "Hello, I am",
-            name: "Minh Anh",
+            name: "Olwen Luu",
             typewriterPrefix: "I am a ",
             roles: [
-                "Digital Marketing Specialist",
                 "Content & Brand Strategist",
-                "Performance Ads Expert",
-                "Growth & Campaign Manager"
+                "Digital Marketing Specialist",
+                "Growth & Campaign Manager",
+                "Performance Ads"
             ],
             tagline: "Bridging creative storytelling and data-driven analytics to craft high-impact marketing campaigns and drive sustainable revenue growth.",
             ctaProjects: "Explore Campaigns",
             ctaContact: "Get in Touch",
             statusAvailable: "Available for new projects",
             experienceBadge: "3+ Years Experience",
-            roasBadge: "350% ROAS Growth"
+            roasBadge: "Remote Job"
         },
 
         about: {
