@@ -153,7 +153,7 @@ const profileData = {
                     highlight: "+120% Nhận diện",
                     description: "Truyền tải thông điệp truyền thông 'Phát triển bền vững', Social Media kết hợp Dự án cộng đồng.",
                     results: [
-                        "Hơn 51.000 lượt tiếp cận Reach và 63.000 lượt hiển thị Impressions trên fanpage",
+                        "Hơn 51.000 lượt tiếp cận và 63.000 lượt hiển thị trên fanpage",
                         "798+ lượt tương tác toàn diện, thúc đẩy hiệu quả mức độ quan tâm bài viết và đăng ký sự kiện",
                         "Tối ưu hóa ngân sách tiếp thị với CPM tiết kiệm (~7.300 VNĐ) và tỷ lệ CTR nội dung đạt mức cao 3.67%"
                     ],
@@ -177,32 +177,31 @@ const profileData = {
                 {
                     id: 3,
                     category: "content",
-                    title: "Chiến Lược Content Inbound & SEO Tổng Thể",
-                    client: "FinWise Education (Viện Đào tạo)",
+                    title: "Hải Âu Bay",
                     image: "assets/images/gallery-3.jpg",
-                    highlight: "+200K Visits/tháng",
-                    description: "Xây dựng cụm chủ đề (Topic Clusters) với 150+ bài viết chuẩn SEO chuyên sâu kết hợp Ebook miễn phí làm Lead Magnet để thu thập dữ liệu khách hàng tiềm năng.",
+                    highlight: "+28K lượt xem trong 3 tuần",
+                    description: "Xây dựng cụm chủ đề (Topic Clusters) với chuỗi nội dung chuyên sâu về văn hóa.",
                     results: [
-                        "85+ từ khóa chiến lược lọt Top 3 Google Search",
-                        "Thu thập 12.000+ leads chất lượng cao với chi phí 0đ qua Ebook",
+                        "28.000+ lượt xem và 400+ subscribers mới trên YouTube với chi phí quảng cáo tối ưu.",
+                        "Làm chủ quy trình sản xuất nội dung YouTube (kịch bản, thu âm, đánh giá hiệu suất).",
                         "Tăng thời gian ở lại trang (Time on Site) lên 4 phút 15 giây"
                     ],
-                    tags: ["SEO Strategy", "Inbound Marketing", "Lead Magnet", "Copywriting"]
+                    tags: ["Digital Storytelling", "Content Production", "Inbound Marketing"]
                 },
                 {
                     id: 4,
                     category: "social",
-                    title: "Chiến Dịch Viral TikTok & KOC Review Lan Tỏa",
-                    client: "SnackTrend (Ngành hàng FMCG)",
+                    title: "Chiến Dịch Viral TikTok",
+                    client: "Thành Nhân Education",
                     image: "assets/images/gallery-4.jpg",
-                    highlight: "18M+ Views TikTok",
+                    highlight: "192K+ Views TikTok",
                     description: "Tạo trào lưu âm thanh độc quyền (Branded Sound) và hợp tác với 50 Micro-KOCs tạo nội dung thử thách ăn vặt hài hước, kích thích người dùng tự sáng tạo nội dung (UGC).",
                     results: [
-                        "Hơn 8.000 video UGC được người dùng sáng tạo",
-                        "Sản phẩm 'Cháy hàng' trên kênh TikTok Shop trong 48 giờ",
-                        "Chi phí trên mỗi lượt xem (CPV) siêu rẻ chỉ 8 VNĐ/view"
+                        "Sản xuất kịch bản cho chiến dịch truyền thông ngắn hạn với 50+ video TikTok.",
+                        "Sở hữu video đạt 192.000+ lượt xem tự nhiên (Organic Views) hoàn toàn không tốn chi phí Ads.",
+                        "100% tổng số video trong chiến dịch phá vỡ cột mốc 1.000+ views."
                     ],
-                    tags: ["TikTok Challenge", "KOC Affiliate", "UGC Campaign", "Viral Video"]
+                    tags: ["Short-Form Content", "TikTok Strategy", "Creative Direction", "Viral Video"]
                 }
             ]
         },
