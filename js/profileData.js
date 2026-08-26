@@ -44,12 +44,9 @@ const profileData = {
             name: "Yến Lưu",
             typewriterPrefix: "Tôi là ",
             roles: [
-                "Content & Brand Strategist",
-                "Digital Marketing Strategist",
-                "Growth & Campaign Specialist",
-                "Performance Ads"
+                "Integrated Marketing & Content Specialist"
             ],
-            tagline: "Kết hợp tư duy Sáng tạo Nghệ thuật và Phân tích Số liệu (Data-driven) để kiến tạo các chiến dịch tiếp thị bứt phá và thúc đẩy tăng trưởng doanh thu bền vững.",
+            tagline: "Kết hợp tư duy Sáng tạo Nghệ thuật và Phân tích Số liệu (Data-driven) để kiến tạo các giá trị, góp phần thúc đẩy tăng trưởng doanh thu bền vững.",
             ctaProjects: "Xem Dự Án",
             ctaContact: "Liên Hệ Ngay",
             statusAvailable: "Sẵn sàng nhận dự án mới",
@@ -59,19 +56,19 @@ const profileData = {
 
         about: {
             sectionBadge: "Về bản thân",
-            title: "Đam mê kiến tạo giá trị qua từng chiến dịch",
+            title: "Kiến tạo giá trị thông qua Truyền thông Tích hợp & Kể chuyện Thương hiệu",
             subtitle: "Hành trình kết nối cảm xúc thương hiệu với khách hàng mục tiêu",
-            bioParagraph1: "Chào bạn! Tôi là một chuyên viên <strong>Marketing</strong> với hơn 3+ năm kinh nghiệm thực chiến trong việc hoạch định chiến lược, triển khai chiến dịch truyền thông đa kênh (Omnichannel) và tối ưu hóa hiệu suất chuyển đổi số.",
-            bioParagraph2: "Triết lý làm việc của tôi: <em>'Mọi ý tưởng sáng tạo phải được neo giữ bởi dữ liệu thực tế và đo lường bằng kết quả kinh doanh'</em>. Tôi có thế mạnh đồng thời ở cả hai mảng: <strong>Branding & Storytelling</strong> (kể câu chuyện thương hiệu chạm đến trái tim) và <strong>Performance Marketing</strong> (quản lý ngân sách quảng cáo tối ưu ROI/ROAS).",
+            bioParagraph1: "Chào bạn! Tôi là một Integrated Marketing & Content Specialist <strong>Marketing</strong> với hơn 3+ năm kinh nghiệm thực chiến trong việc hoạch định chiến lược nội dung, triển khai chiến dịch truyền thông đa nền tảng và thúc đẩy tăng trưởng tự nhiên (Organic Growth). Với khả năng bao quát từ khâu lên kịch bản, sản xuất visual đến vận hành hậu cần, tôi chuyên chuyển hóa thông điệp thương hiệu thành những sản phẩm truyền thông giàu tính kết nối và tối ưu điểm chạm khách hàng.",
+            bioParagraph2: "Triết lý làm việc của tôi: <em>'Mọi ý tưởng sáng tạo phải được neo giữ bởi dữ liệu thực tế và đo lường bằng kết quả kinh doanh'</em>. Tôi có thế mạnh đồng thời ở cả hai mảng: <strong>Branding & Storytelling</strong> (xây dựng câu chuyện thương hiệu truyền cảm hứng) và <strong>Content Operations & Performance</strong> (tối ưu hóa quy trình sản xuất đa phương tiện).",
             stats: [
                 { value: "3+", label: "Năm kinh nghiệm", icon: "award" },
                 { value: "50+", label: "Chiến dịch thực thi", icon: "rocket" },
                 { value: "350%", label: "Tăng trưởng ROAS TB", icon: "trending-up" },
-                { value: "15+", label: "Thương hiệu đồng hành", icon: "briefcase" }
+                { value: "10+", label: "Thương hiệu đồng hành", icon: "briefcase" }
             ],
             quickInfo: [
                 { label: "Chuyên môn", value: "Marketing" },
-                { label: "Nơi làm việc", value: "Cần Thơ / Remote" },
+                { label: "Nơi làm việc", value: "Việt Nam / Remote" },
                 { label: "Ngôn ngữ", value: "Tiếng Việt, Tiếng Anh" },
                 { label: "Tình trạng", value: "Sẵn sàng hợp tác / Remote" }
             ],
@@ -161,21 +158,6 @@ const profileData = {
                 },
                 {
                     id: 2,
-                    category: "performance",
-                    title: "Tối Ưu Phễu Quảng Cáo Tăng Trưởng (Scale Ads)",
-                    client: "Aura Skincare (Dược mỹ phẩm)",
-                    image: "assets/images/gallery-2.jpg",
-                    highlight: "ROAS Đạt 4.8x",
-                    description: "Thiết lập hệ thống chuyển đổi đa tầng: Tìm kiếm nhu cầu (Google PMax) -> Kích thích mong muốn (TikTok Ads & Reels) -> Chốt đơn & Bám đuổi (Meta Dynamic Retargeting).",
-                    results: [
-                        "Tăng tỷ lệ chuyển đổi website từ 1.8% lên 3.6%",
-                        "Tiết kiệm 22% ngân sách quảng cáo không hiệu quả",
-                        "Doanh thu tăng trưởng 220% sau 3 tháng"
-                    ],
-                    tags: ["Meta Ads", "Google PMax", "TikTok Shop", "A/B Testing"]
-                },
-                {
-                    id: 3,
                     category: "content",
                     title: "Hải Âu Bay",
                     image: "assets/images/gallery-3.jpg",
@@ -189,7 +171,7 @@ const profileData = {
                     tags: ["Digital Storytelling", "Content Production", "Inbound Marketing"]
                 },
                 {
-                    id: 4,
+                    id: 3,
                     category: "social",
                     title: "Chiến Dịch Viral TikTok",
                     client: "Thành Nhân Education",
@@ -215,8 +197,7 @@ const profileData = {
                     name: "Digital Ads & Performance",
                     icon: "target",
                     skills: [
-                        { name: "Meta Ads (Facebook & Instagram)", level: 95 },
-                        { name: "Google Ads (Search, Display, PMax)", level: 90 },
+                        { name: "Meta Ads (Facebook)", level: 95 },
                         { name: "TikTok Ads & TikTok Shop", level: 88 },
                         { name: "Re-marketing & Phễu chuyển đổi", level: 92 }
                     ]
@@ -237,9 +218,8 @@ const profileData = {
                     skills: [
                         { name: "Google Analytics 4 (GA4) & GTM", level: 90 },
                         { name: "Looker Studio Dashboard & Data Analysis", level: 85 },
-                        { name: "Canva, Photoshop & Visual Concept", level: 88 },
-                        { name: "CapCut & Video Short-form Editing", level: 90 },
-                        { name: "HubSpot CRM & Email Automation", level: 82 }
+                        { name: "Canva, Photoshop & Visual Concept", level: 90 },
+                        { name: "CapCut & Video Short-form Editing", level: 88 },
                     ]
                 },
                 {
@@ -248,7 +228,7 @@ const profileData = {
                     skills: [
                         { name: "Hoạch định ngân sách & Dự báo KPI", level: 92 },
                         { name: "Quản lý dự án chiến dịch (Campaign Management)", level: 95 },
-                        { name: "Tư duy phản biện & Giải quyết vấn đề", level: 90 },
+                        { name: "Tư duy phản biện & Giải quyết vấn đề", level: 85 },
                         { name: "Thuyết trình & Đàm phán đối tác", level: 88 }
                     ]
                 }
