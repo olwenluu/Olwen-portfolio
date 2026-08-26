@@ -311,49 +311,46 @@ const profileData = {
 
         hero: {
             greeting: "Hello, I am",
-            name: "Olwen Luu",
-            typewriterPrefix: "I am a ",
+            name: "Yen Luu",
+            typewriterPrefix: "I am an ",
             roles: [
-                "Content & Brand Strategist",
-                "Digital Marketing Strategist",
-                "Growth & Campaign Specialist",
-                "Performance Ads"
+                "Integrated Marketing & Content Specialist"
             ],
-            tagline: "Bridging creative storytelling and data-driven analytics to craft high-impact marketing campaigns and drive sustainable revenue growth.",
-            ctaProjects: "Explore Campaigns",
+            tagline: "Bridging creative storytelling with data-driven analytics to craft high-impact marketing initiatives and drive sustainable revenue growth.",
+            ctaProjects: "View Projects",
             ctaContact: "Get in Touch",
-            statusAvailable: "Available for new projects",
+            statusAvailable: "Available for New Opportunities",
             experienceBadge: "3+ Years Experience",
-            roasBadge: "350% ROAS Growth"
+            roasBadge: "Remote / Global"
         },
 
         about: {
             sectionBadge: "About Me",
-            title: "Passionate about creating value through every campaign",
-            subtitle: "Connecting brand narratives with target audiences meaningfully",
-            bioParagraph1: "Hi there! I am a <strong>Marketing Specialist</strong> with 3+ years of hands-on experience in omnichannel strategy, media planning, and digital conversion rate optimization.",
-            bioParagraph2: "My core philosophy: <em>'Every creative concept must be anchored in data and validated by tangible business outcomes'</em>. I combine deep expertise across both <strong>Branding & Storytelling</strong> (building emotional resonance) and <strong>Performance Marketing</strong> (maximizing ROAS and CAC efficiency).",
+            title: "Driving Value via Integrated Communications & Strategic Brand Storytelling",
+            subtitle: "Connecting brand narratives with target consumer touchpoints seamlessly",
+            bioParagraph1: "Hi there! I am an <strong>Integrated Marketing & Content Specialist</strong> with 3+ years of hands-on experience in content strategy, multi-platform campaign execution, and organic growth acceleration. Spanning creative copywriting, visual production, and event logistics, I specialize in transforming brand messages into high-converting, resonant media assets that optimize customer touchpoints.",
+            bioParagraph2: "My core philosophy: <em>'Every creative concept must be anchored in empirical data and validated by measurable business results'</em>. I excel at bridging <strong>Branding & Storytelling</strong> (building emotional brand equity) with <strong>Content Operations & Performance</strong> (streamlining multimedia production workflows).",
             stats: [
                 { value: "3+", label: "Years Experience", icon: "award" },
                 { value: "50+", label: "Campaigns Executed", icon: "rocket" },
                 { value: "350%", label: "Avg. ROAS Growth", icon: "trending-up" },
-                { value: "15+", label: "Brands Partnered", icon: "briefcase" }
+                { value: "10+", label: "Brands Partnered", icon: "briefcase" }
             ],
             quickInfo: [
-                { label: "Specialty", value: "Digital & Brand Marketing" },
-                { label: "Location", value: "Hanoi / Remote" },
-                { label: "Languages", value: "Vietnamese (Native), English (IELTS 7.0)" },
-                { label: "Availability", value: "Open for Projects / Full-time" }
+                { label: "Expertise", value: "Integrated Marketing & Content" },
+                { label: "Location", value: "Vietnam / Remote Worldwide" },
+                { label: "Languages", value: "Vietnamese (Native), English" },
+                { label: "Availability", value: "Open for Projects / Remote" }
             ],
-            galleryTitle: "Moments & Real-world Activities",
-            gallerySubtitle: "Snapshots from events, workshops, and everyday creative work"
+            galleryTitle: "Key Moments & Practical Engagements",
+            gallerySubtitle: "Snapshots from creative workshops, strategic campaigns, and on-ground brand activations"
         },
 
         experiences: {
-            sectionBadge: "Work Experiences",
-            title: "Career Milestones & Proven Results",
-            subtitle: "Key professional highlights and signature marketing campaigns successfully executed",
-            timelineTitle: "Work History",
+            sectionBadge: "Work Experience",
+            title: "Professional Milestones & Proven Track Record",
+            subtitle: "Key career accomplishments and signature marketing campaigns directly executed",
+            timelineTitle: "Career History",
             projectsTitle: "Featured Campaigns & Case Studies",
             categories: {
                 all: "All",
@@ -364,39 +361,51 @@ const profileData = {
             },
             timeline: [
                 {
-                    period: "2023 - Present",
-                    role: "Marketing Executive",
-                    company: "Hai Au Can Tho Restaurant, Hotel & Tourism Co., Ltd.",
-                    description: "Responsible for planning and executing omnichannel marketing strategies for 3 corporate member brands.",
+                    period: "Present",
+                    role: "Deputy Director of Marketing",
+                    company: "THANH NHAN EDUCATION CO., LTD.",
+                    description: "Lead overarching marketing strategy, brand positioning, and multi-channel campaign architectures.",
                     achievements: [
-                        "Content production & conversion funnel optimization: Achieved a +100% boost in user engagement.",
-                        "Multimedia asset planning & creation (Copywriting, graphic design via Canva/AI/PTS, video editing with CapCut Pro).",
-                        "Partnership development & brand elevation: Expanded strategic partnerships, showcasing brands at events and trade fairs to maximize reach."
+                        "Spearheaded a 100% organic content series ('Campus & Exam Bulletin'), effectively engaging target high school students during the peak National Exam season.",
+                        "Drove exponential organic reach, achieving 364.3K video views (+500.3%), 126.2K unique viewers (+572.9%), and 8.5K profile visits (+434.9%).",
+                        "Optimized creative content to surge user engagement by +788.8% (1.6K interactions) and accelerated organic follower acquisition by +2,700% (450+ new followers) with zero ad spend."
+                    ],
+                    tags: ["OrganicGrowth", "SocialMediaStrategy", "VisualCommunication"]
+                },
+                {
+                    period: "2023 - 2026",
+                    role: "Marketing Executive",
+                    company: "HAI AU CAN THO RESTAURANT, HOTEL & TOURISM CO., LTD.",
+                    description: "Formulated and orchestrated omnichannel marketing and promotional strategies across 3 corporate subsidiary brands.",
+                    achievements: [
+                        "Engineered full-funnel content and conversion architectures, delivering a +100% surge in social media engagement.",
+                        "Directed end-to-end multimedia asset creation (strategic copywriting, graphic design via Canva/AI/Photoshop, and video editing via CapCut Pro).",
+                        "Cultivated strategic B2B partnerships and amplified brand presence across major industry expos, trade fairs, and regional networking events."
                     ],
                     tags: ["Omnichannel Strategy", "Meta Ads", "Google Ads PMax", "Team Leadership"]
                 },
                 {
                     period: "2023",
                     role: "Content & Social Media Lead",
-                    company: "IVY Commercial Services JSC",
-                    description: "Directed creative content, community growth on Facebook, and long-term Inbound Marketing strategies for F&B brands.",
+                    company: "IVY COMMERCIAL SERVICES JSC",
+                    description: "Directed creative content development, community building on Facebook, and sustainable inbound marketing funnels for F&B brands.",
                     achievements: [
-                        "Long-term Inbound Strategy: Built and executed omnichannel content ecosystems for F&B models, attracting organic leads and optimizing CAC by 15-20%.",
-                        "KPI & Performance Optimization: Established periodic campaign analytics dashboards, continuously improving content to maintain 90-100% KPI achievement rate.",
-                        "Built influencer collaboration workflows with 20+ KOC/KOL creators under Booking models.",
-                        "Led a team of 5 members covering Content, Media, and Ads."
+                        "Devised a long-term Inbound Marketing ecosystem across F&B business units, capturing high-intent organic leads and slashing Customer Acquisition Cost (CAC) by 15–20%.",
+                        "Instituted rigorous KPI tracking frameworks and agile content iterations, consistently achieving a 90–100% KPI fulfillment rate across brand activation campaigns.",
+                        "Streamlined influencer onboarding and managed relationships with 20+ relevant KOCs/KOLs under performance-driven booking models.",
+                        "Supervised and mentored a 5-member cross-functional team across Content Writing, Media Production, and Digital Ads."
                     ],
                     tags: ["Viral Content", "KOC/KOL Booking", "Community Building"]
                 },
                 {
                     period: "2021 - 2022",
                     role: "Copywriter & Marketing Support",
-                    company: "MADIAD Trading & Service Co., Ltd.",
-                    description: "Planned, developed, and managed multi-channel content (PR articles, Website) and supported offline brand activations.",
+                    company: "MADIAD TRADING & SERVICE CO., LTD.",
+                    description: "Planned, developed, and managed multi-channel content assets (PR articles, website copy) while supporting offline brand activation events.",
                     achievements: [
-                        "Organic Growth: Accelerated reach by +101.5% (40,000+ reach) and page visits by +259% (4,000+ visits) via long-term content strategy without relying on ad budget.",
-                        "Brand Storytelling: Penned the 'Young Entrepreneurs' Stories' series, achieving 2,500+ organic views and strong engagement.",
-                        "Event Operations: Bridged content strategy with live events; supported filming and media production for product launches with 2,000+ attendees."
+                        "Ignited organic brand visibility, generating a +101.5% surge in total reach (40,000+) and a +259% increase in page visits (4,000+) via organic content optimization without ad spend.",
+                        "Penned and shaped the signature storytelling series 'Young Entrepreneurs' Stories', generating 2,500+ organic impressions and high engagement.",
+                        "Bridged content strategy with live events; coordinated on-ground operations and captured media assets for a flagship product launch engaging 2,000+ attendees."
                     ],
                     tags: ["Copywriting", "Event Activation", "Market Research"]
                 }
@@ -406,61 +415,45 @@ const profileData = {
                     id: 1,
                     category: "branding",
                     title: "On The Map",
-                    client: "Community Project & Sustainable Development",
+                    client: "Community Initiative & Sustainable Development",
                     image: "assets/images/gallery-1.jpg",
-                    highlight: "+120% Awareness",
-                    description: "Communicating the 'Sustainable Development' core message via Social Media integrated with Community Initiatives.",
+                    highlight: "+120% Brand Awareness",
+                    description: "Communicating the 'Sustainable Development' core message by integrating Social Media storytelling with grassroots community initiatives.",
                     results: [
-                        "51,000+ Reach and 63,000+ Impressions on Fanpage",
-                        "798+ total engagements, driving interest and event registrations",
-                        "Optimized marketing budget with efficient CPM (~7,300 VND) and a high 3.67% content CTR"
+                        "Generated 51,000+ Reach and 63,000+ Impressions on Fanpage",
+                        "Captured 798+ total engagements, driving heightened article interest and event registrations",
+                        "Optimized marketing budget with efficient CPM (~7,300 VND) and achieved a top-tier 3.67% content CTR"
                     ],
                     tags: ["Brand Identity", "PR & Press", "Social Launch", "Storytelling"]
                 },
                 {
                     id: 2,
-                    category: "performance",
-                    title: "High-Performance Ads Scale & Funnel Architecture",
-                    client: "Aura Skincare (Cosmeceutical Brand)",
-                    image: "assets/images/gallery-2.jpg",
-                    highlight: "4.8x ROAS Achieved",
-                    description: "Engineered a multi-tiered conversion funnel: Demand generation (Google PMax) -> Consideration (TikTok Ads & Reels) -> Dynamic Retargeting (Meta Ads).",
+                    category: "content",
+                    title: "Hai Au Bay",
+                    image: "assets/images/gallery-3.jpg",
+                    highlight: "+28K Views in 3 Weeks",
+                    description: "Constructed comprehensive topic clusters and cultural storytelling video content to establish thought leadership and attract organic audiences.",
                     results: [
-                        "Increased website conversion rate from 1.8% to 3.6%",
-                        "Reduced ad spend waste by 22%",
-                        "Boosted quarterly revenue by 220% within 3 months"
+                        "Garnered 28,000+ organic views and gained 400+ new YouTube subscribers with highly optimized spend.",
+                        "Mastered the full-cycle YouTube production workflow (scriptwriting, voiceover recording, and performance analytics).",
+                        "Elevated average on-site dwell time (Time on Site) to 4 minutes 15 seconds."
                     ],
-                    tags: ["Meta Ads", "Google PMax", "TikTok Shop", "A/B Testing"]
+                    tags: ["Digital Storytelling", "Content Production", "Inbound Marketing"]
                 },
                 {
                     id: 3,
-                    category: "content",
-                    title: "Comprehensive Inbound Content & SEO Domination",
-                    client: "FinWise Education (Financial Academy)",
-                    image: "assets/images/gallery-3.jpg",
-                    highlight: "+200K Visits/mo",
-                    description: "Constructed comprehensive topic clusters with 150+ in-depth SEO articles combined with premium free Ebooks as lead magnets.",
-                    results: [
-                        "85+ high-intent keywords secured Top 3 Google Search rankings",
-                        "Captured 12,000+ qualified leads at zero ad cost via downloadable guides",
-                        "Extended average user dwell time on site to 4m 15s"
-                    ],
-                    tags: ["SEO Strategy", "Inbound Marketing", "Lead Magnet", "Copywriting"]
-                },
-                {
-                    id: 4,
                     category: "social",
-                    title: "Viral TikTok Trend & KOC Review Campaign",
-                    client: "SnackTrend (FMCG Snack Brand)",
+                    title: "Viral TikTok Campaign",
+                    client: "Thanh Nhan Education",
                     image: "assets/images/gallery-4.jpg",
-                    highlight: "18M+ Views",
-                    description: "Created a branded custom audio track and mobilized 50 micro-creators in a comedic tasting challenge, sparking massive user-generated content (UGC).",
+                    highlight: "192K+ TikTok Views",
+                    description: "Conceptualized and executed a high-velocity short-form video sprint tailored for Gen Z audiences on TikTok.",
                     results: [
-                        "Over 8,000 unique UGC videos submitted by organic users",
-                        "Sold out product inventory on TikTok Shop within 48 hours",
-                        "Ultra-efficient cost per view (CPV) under $0.0004"
+                        "Scripted and directed a high-velocity sprint of 50+ TikTok video assets.",
+                        "Produced a flagship breakout video achieving 192,000+ 100% organic views with $0 ad budget.",
+                        "100% of campaign videos exceeded the 1,000+ views milestone."
                     ],
-                    tags: ["TikTok Challenge", "KOC Affiliate", "UGC Campaign", "Viral Video"]
+                    tags: ["Short-Form Content", "TikTok Strategy", "Creative Direction", "Viral Video"]
                 }
             ]
         },
@@ -474,8 +467,7 @@ const profileData = {
                     name: "Digital Ads & Performance",
                     icon: "target",
                     skills: [
-                        { name: "Meta Ads (Facebook & Instagram)", level: 95 },
-                        { name: "Google Ads (Search, Display, PMax)", level: 90 },
+                        { name: "Meta Ads (Facebook)", level: 95 },
                         { name: "TikTok Ads & TikTok Shop", level: 88 },
                         { name: "Re-marketing & Conversion Funnel", level: 92 }
                     ]
@@ -496,9 +488,8 @@ const profileData = {
                     skills: [
                         { name: "Google Analytics 4 (GA4) & GTM", level: 90 },
                         { name: "Looker Studio Dashboard & Data Analysis", level: 85 },
-                        { name: "Canva, Photoshop & Visual Concept", level: 88 },
-                        { name: "CapCut & Short-form Video Editing", level: 90 },
-                        { name: "HubSpot CRM & Email Automation", level: 82 }
+                        { name: "Canva, Photoshop & Visual Concept", level: 90 },
+                        { name: "CapCut & Video Short-form Editing", level: 88 }
                     ]
                 },
                 {
@@ -507,7 +498,7 @@ const profileData = {
                     skills: [
                         { name: "Budget Allocation & KPI Forecasting", level: 92 },
                         { name: "Campaign Management & Orchestration", level: 95 },
-                        { name: "Critical Thinking & Problem Solving", level: 90 },
+                        { name: "Critical Thinking & Problem Solving", level: 85 },
                         { name: "Pitching & Negotiation", level: 88 }
                     ]
                 }
@@ -519,44 +510,29 @@ const profileData = {
             title: "Academic Background & Professional Certifications",
             subtitle: "Continuously upgrading industry standards to stay ahead of marketing trends",
             degreesTitle: "Academic Degree",
-            certificationsTitle: "Global Professional Certifications",
+            certificationsTitle: "Professional Certifications",
             degrees: [
                 {
-                    degree: "Bachelor of Business Administration / Marketing",
-                    school: "National Economics University (NEU)",
-                    period: "2019 - 2023",
-                    grade: "Graduated with High Distinction (GPA: 3.6/4.0)",
-                    details: "Specialized in Digital Marketing & Consumer Behavior Analysis. 2nd Prize in Student Scientific Research."
+                    degree: "Bachelor of International Business",
+                    school: "Can Tho University (CTU)",
+                    period: "2018 - 2022",
+                    details: "Achieved outstanding distinction at the Starship - Star Awards 2020."
                 }
             ],
             certifications: [
                 {
-                    name: "Google Ads Search & Measurement Certification",
-                    issuer: "Google Skillshop",
-                    year: "2024",
+                    name: "Performance Creative Certification",
+                    issuer: "GIGAN JSC",
+                    year: "2025",
                     icon: "award",
                     code: "Verified Certificate"
                 },
                 {
-                    name: "Meta Certified Digital Marketing Associate",
-                    issuer: "Meta Blueprint",
-                    year: "2024",
-                    icon: "award",
-                    code: "Credential ID: META-94812"
-                },
-                {
-                    name: "HubSpot Inbound Marketing & Content Marketing",
-                    issuer: "HubSpot Academy",
+                    name: "Illustrator Graphics Basic to Intermediate",
+                    issuer: "Keyframe Multimedia School",
                     year: "2023",
                     icon: "award",
-                    code: "Honors Graduate"
-                },
-                {
-                    name: "Google Analytics 4 (GA4) Individual Qualification",
-                    issuer: "Google Skillshop",
-                    year: "2023",
-                    icon: "award",
-                    code: "Advanced Level"
+                    code: "Verified Certificate"
                 }
             ]
         },
