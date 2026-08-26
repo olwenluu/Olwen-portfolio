@@ -14,8 +14,8 @@ const profileData = {
         email: "olwenluu@gmail.com",
         phone: "+84 908 613 416",
         location: {
-            vi: "Cần Thơ / TP. Cần Thơ, Việt Nam",
-            en: "CanTho / Can Tho City, Vietnam"
+            vi: "Việt Nam",
+            en: "Vietnam"
         },
         socials: {
             linkedin: "https://www.linkedin.com/in/yen-luu/",
