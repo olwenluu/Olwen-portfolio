@@ -6,7 +6,7 @@
 // Application State
 const state = {
     lang: localStorage.getItem('portfolio_lang') || profileData.config.defaultLang || 'vi',
-    theme: localStorage.getItem('portfolio_theme') || profileData.config.defaultTheme || 'dark',
+    theme: localStorage.getItem('portfolio_theme') || profileData.config.defaultTheme || 'light',
     activeProjectFilter: 'all',
     lightboxIndex: 0,
     typewriterTimeout: null
@@ -177,6 +177,7 @@ function renderHero(hero) {
     const statusEl = document.getElementById('hero-status');
     const expBadgeEl = document.getElementById('hero-exp-badge');
     const roasBadgeEl = document.getElementById('hero-roas-badge');
+    const avatarImgEl = document.getElementById('hero-avatar-img');
 
     if (greetingEl) greetingEl.textContent = hero.greeting;
     if (nameEl) nameEl.textContent = hero.name;
@@ -186,6 +187,18 @@ function renderHero(hero) {
     if (statusEl) statusEl.textContent = hero.statusAvailable;
     if (expBadgeEl) expBadgeEl.textContent = hero.experienceBadge;
     if (roasBadgeEl) roasBadgeEl.textContent = hero.roasBadge;
+    if (avatarImgEl) {
+        avatarImgEl.onerror = function() {
+            if (this.src.includes('.png')) {
+                this.src = 'assets/images/avatar.jpg';
+            } else if (this.src.includes('.jpg')) {
+                this.src = 'assets/images/avatar.png';
+            }
+        };
+        if (profileData.config.avatarUrl) {
+            avatarImgEl.src = profileData.config.avatarUrl;
+        }
+    }
 }
 
 function renderAbout(about) {
@@ -234,15 +247,14 @@ function renderAbout(about) {
         `).join('');
     }
 
-    // Render Gallery
+    // Render Gallery (Clean images without text captions)
     if (galleryContainer && profileData.gallery) {
         galleryContainer.innerHTML = profileData.gallery.map((img, idx) => `
-            <div class="gallery-img-container aspect-square glass-card overflow-hidden group" onclick="openLightbox(${idx})">
-                <img src="${img.src}" alt="Gallery Image ${idx + 1}" class="gallery-img w-full h-full object-cover">
+            <div class="gallery-img-container aspect-square glass-card overflow-hidden group cursor-pointer" onclick="openLightbox(${idx})">
+                <img src="${img.src}" alt="Gallery Image ${idx + 1}" class="gallery-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
                 <div class="gallery-overlay">
-                    <div class="text-white text-xs font-medium bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1.5">
-                        <i data-lucide="maximize-2" class="w-3.5 h-3.5"></i>
-                        <span>${state.lang === 'vi' ? img.captionVi : img.captionEn}</span>
+                    <div class="text-white bg-black/60 backdrop-blur-md p-3 rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+                        <i data-lucide="maximize-2" class="w-5 h-5"></i>
                     </div>
                 </div>
             </div>
@@ -430,8 +442,8 @@ function renderEducation(edu) {
                     </div>
                     <span class="text-xs font-bold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">${deg.period}</span>
                 </div>
-                <div class="text-xs font-semibold text-emerald-400 mb-2">${deg.grade}</div>
-                <p class="text-xs text-slate-300 leading-relaxed">${deg.details}</p>
+                ${deg.grade ? `<div class="text-xs font-semibold text-emerald-400 mb-2">${deg.grade}</div>` : ''}
+                <p class="text-xs text-slate-300 leading-relaxed">${deg.details || ''}</p>
             </div>
         `).join('');
     }
@@ -496,17 +508,33 @@ function renderContact(contact) {
     const phoneEl = document.getElementById('contact-phone-val');
     const locEl = document.getElementById('contact-loc-val');
 
-    if (emailEl) emailEl.textContent = profileData.config.email;
-    if (phoneEl) phoneEl.textContent = profileData.config.phone;
-    if (locEl) locEl.textContent = profileData.config.location[state.lang];
+    if (emailEl) {
+        emailEl.textContent = profileData.config.email;
+        const emailLink = emailEl.closest('a');
+        if (emailLink) emailLink.href = `mailto:${profileData.config.email}`;
+    }
+    if (phoneEl) {
+        phoneEl.textContent = profileData.config.phone;
+        const phoneLink = phoneEl.closest('a');
+        if (phoneLink) phoneLink.href = `tel:${profileData.config.phone.replace(/[\s\-\(\)]/g, '')}`;
+    }
+    if (locEl) {
+        locEl.textContent = (profileData.config.location && profileData.config.location[state.lang]) || 'Việt Nam';
+    }
 }
 
 function renderFooter(footer) {
     const rightsEl = document.getElementById('footer-rights');
     const builtEl = document.getElementById('footer-built');
+    const footerBrandName = document.getElementById('footer-brand-name');
+    const headerBrandName = document.getElementById('header-brand-name');
     const year = new Date().getFullYear();
+    const brandName = state.lang === 'vi' ? 'YEN LUU' : 'OLWEN LUU';
+    const headerName = state.lang === 'vi' ? 'YẾN LƯU' : 'OLWEN LUU';
 
-    if (rightsEl) rightsEl.textContent = `© ${year} Minh Anh Portfolio. ${footer.rights}`;
+    if (headerBrandName) headerBrandName.textContent = headerName;
+    if (footerBrandName) footerBrandName.textContent = brandName;
+    if (rightsEl) rightsEl.textContent = `© ${year} ${brandName}. ${footer.rights}`;
     if (builtEl) builtEl.textContent = footer.builtWith;
 }
 
@@ -650,7 +678,16 @@ function updateLightboxContent() {
     const item = profileData.gallery[state.lightboxIndex];
     if (!item) return;
     elements.lightboxImg.src = item.src;
-    elements.lightboxCaption.textContent = state.lang === 'vi' ? item.captionVi : item.captionEn;
+    if (elements.lightboxCaption) {
+        const caption = state.lang === 'vi' ? item.captionVi : item.captionEn;
+        if (caption) {
+            elements.lightboxCaption.textContent = caption;
+            elements.lightboxCaption.style.display = 'block';
+        } else {
+            elements.lightboxCaption.textContent = '';
+            elements.lightboxCaption.style.display = 'none';
+        }
+    }
 }
 
 /* ==========================================================================
@@ -735,6 +772,35 @@ function initQuickEditor() {
         }
     });
 
+    // File input avatar reader
+    const avatarFileInput = document.getElementById('edit-avatar-file');
+    const avatarTextInput = document.getElementById('edit-avatar');
+    const avatarPreviewImg = document.getElementById('edit-avatar-preview');
+
+    if (avatarFileInput) {
+        avatarFileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    const result = event.target.result;
+                    if (avatarPreviewImg) avatarPreviewImg.src = result;
+                    if (avatarTextInput) avatarTextInput.value = result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    }
+
+    if (avatarTextInput) {
+        avatarTextInput.addEventListener('input', (e) => {
+            const val = e.target.value.trim();
+            if (avatarPreviewImg && val) {
+                avatarPreviewImg.src = val;
+            }
+        });
+    }
+
     // Populate current values into form inputs
     function populateEditorFields() {
         const d = profileData;
@@ -743,7 +809,10 @@ function initQuickEditor() {
             if (el && val !== undefined) el.value = val;
         };
 
+        const currentAvatar = d.config.avatarUrl || 'assets/images/avatar.jpg';
         setVal('edit-name', d.vi.hero.name);
+        setVal('edit-avatar', currentAvatar);
+        if (avatarPreviewImg) avatarPreviewImg.src = currentAvatar;
         setVal('edit-email', d.config.email);
         setVal('edit-phone', d.config.phone);
         setVal('edit-location-vi', d.config.location.vi);
@@ -752,10 +821,9 @@ function initQuickEditor() {
         setVal('edit-tagline-en', d.en.hero.tagline);
         setVal('edit-bio-vi', d.vi.about.bioParagraph1);
         setVal('edit-bio-en', d.en.about.bioParagraph1);
-        setVal('edit-linkedin', d.config.socials.linkedin);
-        setVal('edit-facebook', d.config.socials.facebook);
-        setVal('edit-instagram', d.config.socials.instagram);
-        setVal('edit-tiktok', d.config.socials.tiktok);
+        setVal('edit-linkedin', d.config.socials && d.config.socials.linkedin);
+        setVal('edit-facebook', d.config.socials && d.config.socials.facebook);
+        setVal('edit-tiktok', d.config.socials && d.config.socials.tiktok);
         setVal('edit-cv-url', d.config.cvUrl);
     }
 
@@ -764,34 +832,36 @@ function initQuickEditor() {
         const getVal = (id) => (document.getElementById(id) ? document.getElementById(id).value.trim() : '');
 
         const name = getVal('edit-name') || profileData.vi.hero.name;
+        const avatarUrl = getVal('edit-avatar') || profileData.config.avatarUrl || 'assets/images/avatar.jpg';
         const email = getVal('edit-email') || profileData.config.email;
         const phone = getVal('edit-phone') || profileData.config.phone;
-        const locVi = getVal('edit-location-vi') || profileData.config.location.vi;
-        const locEn = getVal('edit-location-en') || profileData.config.location.en;
+        const locVi = getVal('edit-location-vi') || (profileData.config.location && profileData.config.location.vi);
+        const locEn = getVal('edit-location-en') || (profileData.config.location && profileData.config.location.en);
         const taglineVi = getVal('edit-tagline-vi') || profileData.vi.hero.tagline;
         const taglineEn = getVal('edit-tagline-en') || profileData.en.hero.tagline;
         const bioVi = getVal('edit-bio-vi') || profileData.vi.about.bioParagraph1;
         const bioEn = getVal('edit-bio-en') || profileData.en.about.bioParagraph1;
         const linkedin = getVal('edit-linkedin');
         const facebook = getVal('edit-facebook');
-        const instagram = getVal('edit-instagram');
         const tiktok = getVal('edit-tiktok');
         const cvUrl = getVal('edit-cv-url');
 
         // Update profileData in memory
         profileData.vi.hero.name = name;
         profileData.en.hero.name = name;
+        profileData.config.avatarUrl = avatarUrl;
         profileData.config.email = email;
         profileData.config.phone = phone;
+        if (!profileData.config.location) profileData.config.location = {};
         profileData.config.location.vi = locVi;
         profileData.config.location.en = locEn;
         profileData.vi.hero.tagline = taglineVi;
         profileData.en.hero.tagline = taglineEn;
         profileData.vi.about.bioParagraph1 = bioVi;
         profileData.en.about.bioParagraph1 = bioEn;
+        if (!profileData.config.socials) profileData.config.socials = {};
         profileData.config.socials.linkedin = linkedin;
         profileData.config.socials.facebook = facebook;
-        profileData.config.socials.instagram = instagram;
         profileData.config.socials.tiktok = tiktok;
         profileData.config.cvUrl = cvUrl;
 
