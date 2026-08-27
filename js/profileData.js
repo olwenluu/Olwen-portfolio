@@ -95,7 +95,7 @@ const profileData = {
                     company: "CÔNG TY TNHH THÀNH NHÂN EDUCATION",
                     description: "Hoạch định và xây dựng các chiến dịch Marketing.",
                     achievements: [
-                        "Chiến dịch Truyền thông: Triển khai chuỗi nội dung 100% Organic Điểm tin - Điểm trường, tiếp cận hiệu quả học sinh mục tiêu mùa cao điểm thi THPT Quốc gia.",
+                        "Chiến dịch Truyền thông: Chuỗi nội dung 100% Điểm tin Điểm trường, tiếp cận hiệu quả học sinh mục tiêu mùa cao điểm thi THPT Quốc gia.",
                         "Tăng trưởng Tiếp cận: Đạt mức tăng trưởng tự nhiên đột phá với 364,3K lượt xem (+500,3%), 126,2K người xem (+572,9%) và 8,5K lượt truy cập (+434,9%).",
                         "Tối ưu Tương tác: Tối ưu hóa nội dung giúp tăng 788,8% lượt tương tác (1,6K) và 2.700% lượt theo dõi mới (450 followers) mà không cần chạy quảng cáo."
                     ],
@@ -145,7 +145,7 @@ const profileData = {
                     category: "branding",
                     title: "On The Map",
                     client: "Dự án cộng đồng & Phát triển bền vững",
-                    image: "assets/images/gallery-1.jpg",
+                    image: "assets/images/project-1.jpg",
                     highlight: "+120% Nhận diện",
                     description: "Truyền tải thông điệp truyền thông 'Phát triển bền vững', Social Media kết hợp Dự án cộng đồng.",
                     results: [
@@ -159,7 +159,7 @@ const profileData = {
                     id: 2,
                     category: "content",
                     title: "Hải Âu Bay",
-                    image: "assets/images/gallery-3.jpg",
+                    image: "assets/images/project-2.jpg",
                     highlight: "+28K lượt xem trong 3 tuần",
                     description: "Xây dựng cụm chủ đề (Topic Clusters) với chuỗi nội dung chuyên sâu về văn hóa.",
                     results: [
@@ -174,11 +174,11 @@ const profileData = {
                     category: "social",
                     title: "Chiến Dịch Viral TikTok",
                     client: "Thành Nhân Education",
-                    image: "assets/images/gallery-4.jpg",
+                    image: "assets/images/project-3.jpg",
                     highlight: "192K+ Views TikTok",
-                    description: "Tạo trào lưu âm thanh độc quyền (Branded Sound) và hợp tác với 50 Micro-KOCs tạo nội dung thử thách ăn vặt hài hước, kích thích người dùng tự sáng tạo nội dung (UGC).",
+                    description: "Lập chiến dịch tiếp cận khách hàng mục tiêu trong thời gian cao điểm (thi tốt nghiệp THPTQG) với chuỗi Series Điểm tin - Điểm trường hoàn toàn Organic.",
                     results: [
-                        "Sản xuất kịch bản cho chiến dịch truyền thông ngắn hạn với 50+ video TikTok.",
+                        "Viết kịch bản cho chiến dịch truyền thông ngắn hạn với 50+ video TikTok.",
                         "Sở hữu video đạt 192.000+ lượt xem tự nhiên (Organic Views) hoàn toàn không tốn chi phí Ads.",
                         "100% tổng số video trong chiến dịch phá vỡ cột mốc 1.000+ views."
                     ],
@@ -415,7 +415,7 @@ const profileData = {
                     category: "branding",
                     title: "On The Map",
                     client: "Community Initiative & Sustainable Development",
-                    image: "assets/images/gallery-1.jpg",
+                    image: "assets/images/project-1.jpg",
                     highlight: "+120% Brand Awareness",
                     description: "Communicating the 'Sustainable Development' core message by integrating Social Media storytelling with grassroots community initiatives.",
                     results: [
@@ -429,7 +429,7 @@ const profileData = {
                     id: 2,
                     category: "content",
                     title: "Hai Au Bay",
-                    image: "assets/images/gallery-3.jpg",
+                    image: "assets/images/project-2.jpg",
                     highlight: "+28K Views in 3 Weeks",
                     description: "Constructed comprehensive topic clusters and cultural storytelling video content to establish thought leadership and attract organic audiences.",
                     results: [
@@ -444,9 +444,9 @@ const profileData = {
                     category: "social",
                     title: "Viral TikTok Campaign",
                     client: "Thanh Nhan Education",
-                    image: "assets/images/gallery-4.jpg",
+                    image: "assets/images/project-3.jpg",
                     highlight: "192K+ TikTok Views",
-                    description: "Conceptualized and executed a high-velocity short-form video sprint tailored for Gen Z audiences on TikTok.",
+                    description: "Rolled out a dedicated "School News Update" content series, effectively reaching target students during the peak National High School Graduation Exam season..",
                     results: [
                         "Scripted and directed a high-velocity sprint of 50+ TikTok video assets.",
                         "Produced a flagship breakout video achieving 192,000+ 100% organic views with $0 ad budget.",
