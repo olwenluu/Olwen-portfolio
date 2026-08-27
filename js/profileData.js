@@ -20,7 +20,6 @@ const profileData = {
         socials: {
             linkedin: "https://www.linkedin.com/in/yen-luu/",
             facebook: "https://www.facebook.com/yenluu1303/",
-            instagram: "https://www.instagram.com/py03/",
             tiktok: "https://www.tiktok.com/@betoyen",
             email: "mailto:olwenluu@gmail.com"
         },
