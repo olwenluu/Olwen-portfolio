@@ -566,11 +566,11 @@ const profileData = {
         }
     },
 
-    // Gallery images mapping (4 real event & engagement moments)
+    // Gallery images mapping (4 moments)
     gallery: [
-        { src: "assets/images/gallery-1.jpg", captionVi: "Trải nghiệm và ghi hình văn hóa ẩm thực truyền thống", captionEn: "Hands-on culinary culture filming & media production" },
-        { src: "assets/images/gallery-2.jpg", captionVi: "Sự kiện kích hoạt thương hiệu Chum Show - HaiAu Educursions", captionEn: "Chum Show Brand Activation Event - HaiAu Educursions" },
-        { src: "assets/images/gallery-3.jpg", captionVi: "Ban tổ chức & Tác nghiệp truyền thông sự kiện thực tế", captionEn: "Organizing Committee & On-ground Media Production" },
-        { src: "assets/images/gallery-4.jpg", captionVi: "Chương trình cộng đồng 'On The Map' - Phát triển bền vững Cồn Sơn", captionEn: "'On The Map' Community Initiative & Sustainable Development" }
+        { src: "assets/images/gallery-1.jpg" },
+        { src: "assets/images/gallery-2.jpg" },
+        { src: "assets/images/gallery-3.jpg" },
+        { src: "assets/images/gallery-4.jpg" }
     ]
 };
