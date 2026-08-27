@@ -566,13 +566,11 @@ const profileData = {
         }
     },
 
-    // Gallery images mapping
+    // Gallery images mapping (4 real event & engagement moments)
     gallery: [
-        { src: "assets/images/gallery-1.jpg", captionVi: "Hoạt động workshop sáng tạo & lập kế hoạch", captionEn: "Creative workshop & strategy session" },
-        { src: "assets/images/gallery-2.jpg", captionVi: "Sự kiện kích hoạt thương hiệu thực tế", captionEn: "Brand activation event" },
-        { src: "assets/images/gallery-3.jpg", captionVi: "Buổi ghi hình & sản xuất nội dung media", captionEn: "Media production & photoshoot" },
-        { src: "assets/images/gallery-4.jpg", captionVi: "Gặp gỡ đối tác chiến lược & khách hàng", captionEn: "Strategic partner & client meeting" },
-        { src: "assets/images/gallery-5.jpg", captionVi: "Thuyết trình kế hoạch chiến dịch đa kênh", captionEn: "Omnichannel campaign pitch" },
-        { src: "assets/images/gallery-6.jpg", captionVi: "Hoạt động gắn kết & văn hóa làm việc nhóm", captionEn: "Team culture & outdoor activity" }
+        { src: "assets/images/gallery-1.jpg", captionVi: "Trải nghiệm và ghi hình văn hóa ẩm thực truyền thống", captionEn: "Hands-on culinary culture filming & media production" },
+        { src: "assets/images/gallery-2.jpg", captionVi: "Sự kiện kích hoạt thương hiệu Chum Show - HaiAu Educursions", captionEn: "Chum Show Brand Activation Event - HaiAu Educursions" },
+        { src: "assets/images/gallery-3.jpg", captionVi: "Ban tổ chức & Tác nghiệp truyền thông sự kiện thực tế", captionEn: "Organizing Committee & On-ground Media Production" },
+        { src: "assets/images/gallery-4.jpg", captionVi: "Chương trình cộng đồng 'On The Map' - Phát triển bền vững Cồn Sơn", captionEn: "'On The Map' Community Initiative & Sustainable Development" }
     ]
 };
