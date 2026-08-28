@@ -446,7 +446,7 @@ const profileData = {
                     client: "Thanh Nhan Education",
                     image: "assets/images/project-3.jpg",
                     highlight: "192K+ TikTok Views",
-                    description: "Rolled out a dedicated "School News Update" content series, effectively reaching target students during the peak National High School Graduation Exam season..",
+                    description: "Rolled out a dedicated School News Update content series, effectively reaching target students during the peak National High School Graduation Exam season..",
                     results: [
                         "Scripted and directed a high-velocity sprint of 50+ TikTok video assets.",
                         "Produced a flagship breakout video achieving 192,000+ 100% organic views with $0 ad budget.",
