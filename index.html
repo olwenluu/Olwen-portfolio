@@ -120,9 +120,9 @@
                 </button>
 
                 <!-- CV Download Button -->
-                <a href="#contact" id="nav-cv" class="gradient-bg-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-md">
-                    <i data-lucide="download" class="w-3.5 h-3.5"></i>
-                    <span>Tải CV</span>
+                <a href="assets/cv/CV_Yen_Luu.pdf" target="_blank" rel="noopener noreferrer" id="nav-cv" class="gradient-bg-btn px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-md hover:scale-105 transition-transform" title="Xem CV">
+                    <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                    <span>Xem CV</span>
                 </a>
             </div>
 
@@ -148,7 +148,10 @@
             <a href="#skills" id="m-nav-skills" class="mobile-nav-link text-sm font-bold text-slate-800 py-1">Kỹ năng</a>
             <a href="#education" id="m-nav-education" class="mobile-nav-link text-sm font-bold text-slate-800 py-1">Học vấn & Chứng chỉ</a>
             <a href="#contact" id="m-nav-contact" class="mobile-nav-link text-sm font-bold text-slate-800 py-1">Liên hệ</a>
-            <a href="#contact" id="m-nav-cv" class="gradient-bg-btn text-center py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider mt-2">Tải CV</a>
+            <a href="assets/cv/CV_Yen_Luu.pdf" target="_blank" rel="noopener noreferrer" id="m-nav-cv" class="gradient-bg-btn text-center py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider mt-2 flex items-center justify-center gap-1.5">
+                <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+                <span>Xem CV</span>
+            </a>
         </div>
     </header>
 
@@ -718,7 +721,7 @@ const profileData = {
             tiktok: "https://www.tiktok.com/@betoyen",
             email: "mailto:olwenluu@gmail.com"
         },
-        cvUrl: "#contact" // Đường dẫn tải CV (file PDF hoặc link Google Drive)
+        cvUrl: "assets/cv/CV_Yen_Luu.pdf" // Đường dẫn tải CV (file PDF hoặc link Google Drive)
     },
 
     // TIẾNG VIỆT
@@ -730,7 +733,7 @@ const profileData = {
             skills: "Kỹ năng",
             education: "Học vấn & Chứng chỉ",
             contact: "Liên hệ",
-            downloadCv: "Tải CV"
+            downloadCv: "Xem CV"
         },
 
         hero: {
@@ -1000,7 +1003,7 @@ const profileData = {
             skills: "Skills",
             education: "Education & Certs",
             contact: "Contact",
-            downloadCv: "Download CV"
+            downloadCv: "View CV"
         },
 
         hero: {
@@ -1427,20 +1430,38 @@ function renderNav(nav) {
         'nav-skills': nav.skills,
         'nav-education': nav.education,
         'nav-contact': nav.contact,
-        'nav-cv': nav.downloadCv,
         // Mobile nav
         'm-nav-home': nav.home,
         'm-nav-about': nav.about,
         'm-nav-experiences': nav.experiences,
         'm-nav-skills': nav.skills,
         'm-nav-education': nav.education,
-        'm-nav-contact': nav.contact,
-        'm-nav-cv': nav.downloadCv
+        'm-nav-contact': nav.contact
     };
 
     for (const [id, text] of Object.entries(navLinks)) {
         const el = document.getElementById(id);
         if (el) el.textContent = text;
+    }
+
+    // Update CV buttons
+    const cvUrl = (profileData.config && profileData.config.cvUrl) || 'assets/cv/CV_Yen_Luu.pdf';
+    const cvBtn = document.getElementById('nav-cv');
+    const mCvBtn = document.getElementById('m-nav-cv');
+    const cvText = nav.downloadCv || (state.lang === 'vi' ? 'Xem CV' : 'View CV');
+
+    if (cvBtn) {
+        cvBtn.href = cvUrl;
+        cvBtn.target = '_blank';
+        const span = cvBtn.querySelector('span');
+        if (span) span.textContent = cvText;
+    }
+    if (mCvBtn) {
+        mCvBtn.href = cvUrl;
+        mCvBtn.target = '_blank';
+        const span = mCvBtn.querySelector('span');
+        if (span) span.textContent = cvText;
+        else mCvBtn.textContent = cvText;
     }
 }
 
