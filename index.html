@@ -691,8 +691,1506 @@
         </div>
     </div>
 
-    <!-- Scripts (with cache-busting) -->
-    <script src="js/profileData.js?v=3.3"></script>
-    <script src="js/main.js?v=3.3"></script>
+    <!-- Embedded Profile Data & Core Interactive Scripts (100% Self-Contained) -->
+    <script>
+/**
+ * PORTFOLIO DATA CONFIGURATION (Song ngữ: Tiếng Việt & English)
+ * -------------------------------------------------------------
+ * Bạn có thể dễ dàng thay đổi bất kỳ thông tin nào trong file này!
+ * Toàn bộ website sẽ tự động cập nhật theo dữ liệu tại đây.
+ */
+
+const profileData = {
+    // Cấu hình chung / General configuration
+    config: {
+        defaultLang: "vi", // "vi" hoặc "en"
+        defaultTheme: "light", // "dark" hoặc "light"
+        avatarUrl: "assets/images/avatar.png", // Đường dẫn ảnh đại diện (file .png, .jpg hoặc link online)
+        email: "olwenluu@gmail.com",
+        phone: "+84 908 613 416",
+        location: {
+            vi: "Việt Nam",
+            en: "Vietnam"
+        },
+        socials: {
+            linkedin: "https://www.linkedin.com/in/yen-luu/",
+            facebook: "https://www.facebook.com/yenluu1303/",
+            tiktok: "https://www.tiktok.com/@betoyen",
+            email: "mailto:olwenluu@gmail.com"
+        },
+        cvUrl: "#contact" // Đường dẫn tải CV (file PDF hoặc link Google Drive)
+    },
+
+    // TIẾNG VIỆT
+    vi: {
+        nav: {
+            home: "Trang chủ",
+            about: "Giới thiệu",
+            experiences: "Kinh nghiệm & Dự án",
+            skills: "Kỹ năng",
+            education: "Học vấn & Chứng chỉ",
+            contact: "Liên hệ",
+            downloadCv: "Tải CV"
+        },
+
+        hero: {
+            greeting: "Xin chào, tôi là",
+            name: "Yến Lưu",
+            typewriterPrefix: "Tôi là ",
+            roles: [
+                "Integrated Marketing & Content Specialist"
+            ],
+            tagline: "Kết hợp tư duy Sáng tạo Nghệ thuật và Phân tích Số liệu (Data-driven) để kiến tạo các giá trị, góp phần thúc đẩy tăng trưởng doanh thu bền vững.",
+            ctaProjects: "Xem Dự Án",
+            ctaContact: "Liên Hệ Ngay",
+            statusAvailable: "Sẵn sàng nhận dự án mới",
+            experienceBadge: "3+ Năm Kinh Nghiệm",
+            roasBadge: "Remote Job"
+        },
+
+        about: {
+            sectionBadge: "Về bản thân",
+            title: "Kiến tạo giá trị thông qua Truyền thông Tích hợp & Kể chuyện Thương hiệu",
+            subtitle: "Hành trình kết nối cảm xúc thương hiệu với khách hàng mục tiêu",
+            bioParagraph1: "Chào bạn! Tôi là một Integrated Marketing & Content Specialist <strong>Marketing</strong> với hơn 3+ năm kinh nghiệm thực chiến trong việc hoạch định chiến lược nội dung, triển khai chiến dịch truyền thông đa nền tảng và thúc đẩy tăng trưởng tự nhiên (Organic Growth). Với khả năng bao quát từ khâu lên kịch bản, sản xuất visual đến vận hành hậu cần, tôi chuyên chuyển hóa thông điệp thương hiệu thành những sản phẩm truyền thông giàu tính kết nối và tối ưu điểm chạm khách hàng.",
+            bioParagraph2: "Triết lý làm việc của tôi: <em>'Mọi ý tưởng sáng tạo phải được neo giữ bởi dữ liệu thực tế và đo lường bằng kết quả kinh doanh'</em>. Tôi có thế mạnh đồng thời ở cả hai mảng: <strong>Branding & Storytelling</strong> (xây dựng câu chuyện thương hiệu truyền cảm hứng) và <strong>Content Operations & Performance</strong> (tối ưu hóa quy trình sản xuất đa phương tiện).",
+            stats: [
+                { value: "3+", label: "Năm kinh nghiệm", icon: "award" },
+                { value: "50+", label: "Chiến dịch thực thi", icon: "rocket" },
+                { value: "350%", label: "Tăng trưởng ROAS TB", icon: "trending-up" },
+                { value: "10+", label: "Thương hiệu đồng hành", icon: "briefcase" }
+            ],
+            quickInfo: [
+                { label: "Chuyên môn", value: "Marketing" },
+                { label: "Nơi làm việc", value: "Việt Nam / Remote" },
+                { label: "Ngôn ngữ", value: "Tiếng Việt, Tiếng Anh" },
+                { label: "Tình trạng", value: "Sẵn sàng hợp tác / Remote" }
+            ],
+            galleryTitle: "Những khoảnh khắc & Hoạt động thực tế",
+            gallerySubtitle: "Một số hình ảnh tại các sự kiện, workshop và hoạt động sáng tạo thường nhật"
+        },
+
+        experiences: {
+            sectionBadge: "Kinh nghiệm làm việc",
+            title: "Hành trình nghề nghiệp & Dấu ấn thực chiến",
+            subtitle: "Những cột mốc phát triển và các chiến dịch Marketing tiêu biểu đã trực tiếp thực thi",
+            timelineTitle: "Lịch sử công tác",
+            projectsTitle: "Chiến dịch & Dự án tiêu biểu",
+            categories: {
+                all: "Tất cả",
+                performance: "Performance Ads",
+                branding: "Branding & Launch",
+                content: "Content & SEO",
+                social: "Social & Viral"
+            },
+            timeline: [
+                {
+                    period: "Hiện tại",
+                    role: "Deputy Director of Marketing",
+                    company: "CÔNG TY TNHH THÀNH NHÂN EDUCATION",
+                    description: "Hoạch định và xây dựng các chiến dịch Marketing.",
+                    achievements: [
+                        "Chiến dịch Truyền thông: Chuỗi nội dung 100% Điểm tin Điểm trường, tiếp cận hiệu quả học sinh mục tiêu mùa cao điểm thi THPT Quốc gia.",
+                        "Tăng trưởng Tiếp cận: Đạt mức tăng trưởng tự nhiên đột phá với 364,3K lượt xem (+500,3%), 126,2K người xem (+572,9%) và 8,5K lượt truy cập (+434,9%).",
+                        "Tối ưu Tương tác: Tối ưu hóa nội dung giúp tăng 788,8% lượt tương tác (1,6K) và 2.700% lượt theo dõi mới (450 followers) mà không cần chạy quảng cáo."
+                    ],
+                    tags: ["OrganicGrowth", "SocialMediaStrategy", "VisualCommunication"]
+                },
+                {
+                    period: "2023 - 2026",
+                    role: "Marketing Executive",
+                    company: "CÔNG TY TNHH NHÀ HÀNG KHÁCH SẠN VÀ DU LỊCH Hải Âu Cần Thơ",
+                    description: "Chịu trách nhiệm hoạch định và điều phối chiến lược tiếp thị đa kênh cho 3 thương hiệu trực thuộc Công ty.",
+                    achievements: [
+                        "Sản xuất nội dung & Tối ưu hóa phễu chuyển đổi: giúp tăng 100% lượt tương tác.",
+                        "Lập kế hoạch và sáng tạo ấn phẩm đa phương tiện (Copywriting, thiết kế qua Canva/AI/PTS, dựng video bằng CapCut Pro).",
+                        "Tìm kiếm đối tác & Nâng tầm thương hiệu: mở rộng các cơ hội hợp tác chiến lược, đưa hình ảnh thương hiệu xuất hiện tại các sự kiện và hội chợ để gia tăng tối đa độ phủ sóng."
+                    ],
+                    tags: ["Omnichannel Strategy", "Meta Ads", "Google Ads PMax", "Team Leadership"]
+                },
+                {
+                    period: "2023",
+                    role: "Content & Social Media Lead",
+                    company: "CÔNG TY CỔ PHẦN DV TM IVY",
+                    description: "Định hướng nội dung sáng tạo, xây dựng cộng đồng trên Facebook và chiến lược Inbound Marketing dài hạn cho các thương hiệu F&B.",
+                    achievements: [
+                        "Chiến lược Inbound Marketing dài hạn: Hoạch định và triển khai hệ sinh thái nội dung đa kênh cho các mô hình F&B, thành công thu hút tệp khách hàng tiềm năng tự nhiên và tối ưu 15-20% chi phí chuyển đổi.",
+                        "Tối ưu hóa KPIs & Hiệu suất: Thiết lập hệ thống đo lường dữ liệu chiến dịch định kỳ, chủ động đưa ra các cải tiến nội dung kịp thời, duy trì tỷ lệ đạt KPIs trung bình 90-100% qua các đợt kích hoạt thương hiệu.",
+                        "Thiết lập quy trình hợp tác với hơn 20+ KOC/KOL theo mô hình Booking.",
+                        "Dẫn dắt đội ngũ 5 thành viên phụ trách Content, Media và Ads."
+                    ],
+                    tags: ["Viral Content", "KOC/KOL Booking", "Community Building"]
+                },
+                {
+                    period: "2021 - 2022",
+                    role: "Copywriting",
+                    company: "CÔNG TY TNHH MTV TM DV MADIAD",
+                    description: "Chịu trách nhiệm lập kế hoạch, phát triển và quản lý nội dung đa kênh (bài PR, Website) và hỗ trợ tổ chức sự kiện kích hoạt thương hiệu trực tiếp.",
+                    achievements: [
+                        "Tăng trưởng tự nhiên: Thúc đẩy tăng 101,5% lượt tiếp cận (đạt mức 40.000) và 259% lượt truy cập trang (đạt mức 4.000) nhờ chiến lược tối ưu nội dung dài hạn mà không phụ thuộc vào ngân sách quảng cáo.",
+                        "Biên tập & Kể chuyện thương hiệu: Định hình phong cách và chắp bút cho chuỗi nội dung 'Chuyện người trẻ khởi nghiệp', ghi nhận mức lan tỏa tốt với 2.500+ lượt xem organic.",
+                        "Đa nhiệm trong tổ chức sự kiện: Đóng vai trò cầu nối giữa mảng nội dung và sự kiện thực tế. Tham gia hỗ trợ vận hành và trực tiếp ghi hình/sản xuất tư liệu truyền thông cho sự kiện ra mắt sản phẩm với hơn 2.000 người tham dự."
+                    ],
+                    tags: ["Copywriting", "Event Activation", "Market Research"]
+                }
+            ],
+            projects: [
+                {
+                    id: 1,
+                    category: "branding",
+                    title: "On The Map",
+                    client: "Dự án cộng đồng & Phát triển bền vững",
+                    image: "assets/images/project-1.jpg",
+                    highlight: "+120% Nhận diện",
+                    description: "Truyền tải thông điệp truyền thông 'Phát triển bền vững', Social Media kết hợp Dự án cộng đồng.",
+                    results: [
+                        "Hơn 51.000 lượt tiếp cận và 63.000 lượt hiển thị trên fanpage",
+                        "798+ lượt tương tác toàn diện, thúc đẩy hiệu quả mức độ quan tâm bài viết và đăng ký sự kiện",
+                        "Tối ưu hóa ngân sách tiếp thị với CPM tiết kiệm (~7.300 VNĐ) và tỷ lệ CTR nội dung đạt mức cao 3.67%"
+                    ],
+                    tags: ["Brand Identity", "PR & Press", "Social Launch", "Storytelling"]
+                },
+                {
+                    id: 2,
+                    category: "content",
+                    title: "Hải Âu Bay",
+                    image: "assets/images/project-2.jpg",
+                    highlight: "+28K lượt xem trong 3 tuần",
+                    description: "Xây dựng cụm chủ đề (Topic Clusters) với chuỗi nội dung chuyên sâu về văn hóa.",
+                    results: [
+                        "28.000+ lượt xem và 400+ subscribers mới trên YouTube với chi phí quảng cáo tối ưu.",
+                        "Làm chủ quy trình sản xuất nội dung YouTube (kịch bản, thu âm, đánh giá hiệu suất).",
+                        "Tăng thời gian ở lại trang (Time on Site) lên 4 phút 15 giây"
+                    ],
+                    tags: ["Digital Storytelling", "Content Production", "Inbound Marketing"]
+                },
+                {
+                    id: 3,
+                    category: "social",
+                    title: "Chiến Dịch Viral TikTok",
+                    client: "Thành Nhân Education",
+                    image: "assets/images/project-3.jpg",
+                    highlight: "192K+ Views TikTok",
+                    description: "Lập chiến dịch tiếp cận khách hàng mục tiêu trong thời gian cao điểm (thi tốt nghiệp THPTQG) với chuỗi Series Điểm tin - Điểm trường hoàn toàn Organic.",
+                    results: [
+                        "Viết kịch bản cho chiến dịch truyền thông ngắn hạn với 50+ video TikTok.",
+                        "Sở hữu video đạt 192.000+ lượt xem tự nhiên (Organic Views) hoàn toàn không tốn chi phí Ads.",
+                        "100% tổng số video trong chiến dịch phá vỡ cột mốc 1.000+ views."
+                    ],
+                    tags: ["Short-Form Content", "TikTok Strategy", "Creative Direction", "Viral Video"]
+                }
+            ]
+        },
+
+        skills: {
+            sectionBadge: "Kỹ năng chuyên môn",
+            title: "Bộ công cụ & Năng lực tiếp thị cốt lõi",
+            subtitle: "Sự kết hợp giữa tư duy chiến lược, công nghệ phân tích số liệu và sự sáng tạo không ngừng",
+            categories: [
+                {
+                    name: "Digital Ads & Performance",
+                    icon: "target",
+                    skills: [
+                        { name: "Meta Ads (Facebook)", level: 95 },
+                        { name: "TikTok Ads & TikTok Shop", level: 88 },
+                        { name: "Re-marketing & Phễu chuyển đổi", level: 92 }
+                    ]
+                },
+                {
+                    name: "Content & Brand Strategy",
+                    icon: "feather",
+                    skills: [
+                        { name: "Chiến lược nội dung đa kênh (Omnichannel)", level: 95 },
+                        { name: "Copywriting & Storytelling", level: 92 },
+                        { name: "SEO On-page / Topic Clusters", level: 85 },
+                        { name: "KOL / KOC Booking & Influencer Relations", level: 90 }
+                    ]
+                },
+                {
+                    name: "Công cụ Phân tích & Thiết kế",
+                    icon: "pie-chart",
+                    skills: [
+                        { name: "Google Analytics 4 (GA4) & GTM", level: 90 },
+                        { name: "Looker Studio Dashboard & Data Analysis", level: 85 },
+                        { name: "Canva, Photoshop & Visual Concept", level: 90 },
+                        { name: "CapCut & Video Short-form Editing", level: 88 },
+                    ]
+                },
+                {
+                    name: "Kỹ năng mềm & Quản lý",
+                    icon: "users",
+                    skills: [
+                        { name: "Hoạch định ngân sách & Dự báo KPI", level: 92 },
+                        { name: "Quản lý dự án chiến dịch (Campaign Management)", level: 95 },
+                        { name: "Tư duy phản biện & Giải quyết vấn đề", level: 85 },
+                        { name: "Thuyết trình & Đàm phán đối tác", level: 88 }
+                    ]
+                }
+            ]
+        },
+
+        education: {
+            sectionBadge: "Học vấn & Bằng cấp",
+            title: "Nền tảng học thuật & Chứng chỉ chuyên ngành",
+            subtitle: "Liên tục trau dồi kiến thức chuẩn quốc tế để bắt kịp xu hướng thị trường",
+            degreesTitle: "Quá trình học vấn",
+            certificationsTitle: "Chứng chỉ chuyên nghiệp quốc tế",
+            degrees: [
+                {
+                    degree: "Cử nhân Kinh doanh quốc tế",
+                    school: "Đại học Cần Thơ (CTU)",
+                    period: "2018 - 2022",
+                    details: "Đạt thành tích nổi bật tại cuộc thi Starship - Star Awards năm 2020."
+                }
+            ],
+            certifications: [
+                {
+                    name: "Performance Creative Certification",
+                    issuer: "GIGAN JSC",
+                    year: "2025",
+                    icon: "award",
+                    code: "Verified Certificate"
+                },
+                {
+                    name: "Illustrator Graphics Basic to Intermediate",
+                    issuer: "Keyframe Multimedia School",
+                    year: "2023",
+                    icon: "award",
+                    code: "Verified Certificate"
+                }
+            ]
+        },
+
+        contact: {
+            sectionBadge: "Kết nối ngay",
+            title: "Cùng tạo nên những chiến dịch đột phá",
+            subtitle: "Bạn đang có ý tưởng mới hoặc cần tìm một chuyên gia Marketing đồng hành? Hãy gửi tin nhắn cho tôi ngay hôm nay!",
+            infoTitle: "Thông tin liên hệ",
+            formTitle: "Gửi tin nhắn trực tiếp",
+            labels: {
+                fullName: "Họ và tên của bạn",
+                email: "Địa chỉ Email",
+                subject: "Chủ đề / Dịch vụ quan tâm",
+                message: "Nội dung tin nhắn",
+                sendBtn: "Gửi tin nhắn ngay",
+                sending: "Đang gửi...",
+                success: "Cảm ơn bạn! Tin nhắn đã được gửi thành công. Tôi sẽ phản hồi sớm nhất có thể!"
+            },
+            subjects: [
+                "Tư vấn Chiến lược Marketing Tổng thể",
+                "Quản lý & Tối ưu Quảng cáo (Performance Ads)",
+                "Xây dựng Chiến dịch Nội dung & Viral TikTok",
+                "Cơ hội Hợp tác / Tuyển dụng",
+                "Khác"
+            ]
+        },
+
+        footer: {
+            rights: "Bảo lưu mọi quyền.",
+            builtWith: "Thiết kế với đam mê & sáng tạo dành cho Portfolio chuyên nghiệp."
+        }
+    },
+
+    // ENGLISH
+    en: {
+        nav: {
+            home: "Home",
+            about: "About Me",
+            experiences: "Experiences & Work",
+            skills: "Skills",
+            education: "Education & Certs",
+            contact: "Contact",
+            downloadCv: "Download CV"
+        },
+
+        hero: {
+            greeting: "Hello, I am",
+            name: "Yen Luu",
+            typewriterPrefix: "I am an ",
+            roles: [
+                "Integrated Marketing & Content Specialist"
+            ],
+            tagline: "Bridging creative storytelling with data-driven analytics to craft high-impact marketing initiatives and drive sustainable revenue growth.",
+            ctaProjects: "View Projects",
+            ctaContact: "Get in Touch",
+            statusAvailable: "Available for New Opportunities",
+            experienceBadge: "3+ Years Experience",
+            roasBadge: "Remote / Global"
+        },
+
+        about: {
+            sectionBadge: "About Me",
+            title: "Driving Value via Integrated Communications & Strategic Brand Storytelling",
+            subtitle: "Connecting brand narratives with target consumer touchpoints seamlessly",
+            bioParagraph1: "Hi there! I am an <strong>Integrated Marketing & Content Specialist</strong> with 3+ years of hands-on experience in content strategy, multi-platform campaign execution, and organic growth acceleration. Spanning creative copywriting, visual production, and event logistics, I specialize in transforming brand messages into high-converting, resonant media assets that optimize customer touchpoints.",
+            bioParagraph2: "My core philosophy: <em>'Every creative concept must be anchored in empirical data and validated by measurable business results'</em>. I excel at bridging <strong>Branding & Storytelling</strong> (building emotional brand equity) with <strong>Content Operations & Performance</strong> (streamlining multimedia production workflows).",
+            stats: [
+                { value: "3+", label: "Years Experience", icon: "award" },
+                { value: "50+", label: "Campaigns Executed", icon: "rocket" },
+                { value: "350%", label: "Avg. ROAS Growth", icon: "trending-up" },
+                { value: "10+", label: "Brands Partnered", icon: "briefcase" }
+            ],
+            quickInfo: [
+                { label: "Expertise", value: "Integrated Marketing & Content" },
+                { label: "Location", value: "Vietnam / Remote Worldwide" },
+                { label: "Languages", value: "Vietnamese (Native), English" },
+                { label: "Availability", value: "Open for Projects / Remote" }
+            ],
+            galleryTitle: "Key Moments & Practical Engagements",
+            gallerySubtitle: "Snapshots from creative workshops, strategic campaigns, and on-ground brand activations"
+        },
+
+        experiences: {
+            sectionBadge: "Work Experience",
+            title: "Professional Milestones & Proven Track Record",
+            subtitle: "Key career accomplishments and signature marketing campaigns directly executed",
+            timelineTitle: "Career History",
+            projectsTitle: "Featured Campaigns & Case Studies",
+            categories: {
+                all: "All",
+                performance: "Performance Ads",
+                branding: "Branding & Launch",
+                content: "Content & SEO",
+                social: "Social & Viral"
+            },
+            timeline: [
+                {
+                    period: "Present",
+                    role: "Deputy Director of Marketing",
+                    company: "THANH NHAN EDUCATION CO., LTD.",
+                    description: "Lead overarching marketing strategy, brand positioning, and multi-channel campaign architectures.",
+                    achievements: [
+                        "Spearheaded a 100% organic content series ('Campus & Exam Bulletin'), effectively engaging target high school students during the peak National Exam season.",
+                        "Drove exponential organic reach, achieving 364.3K video views (+500.3%), 126.2K unique viewers (+572.9%), and 8.5K profile visits (+434.9%).",
+                        "Optimized creative content to surge user engagement by +788.8% (1.6K interactions) and accelerated organic follower acquisition by +2,700% (450+ new followers) with zero ad spend."
+                    ],
+                    tags: ["OrganicGrowth", "SocialMediaStrategy", "VisualCommunication"]
+                },
+                {
+                    period: "2023 - 2026",
+                    role: "Marketing Executive",
+                    company: "HAI AU CAN THO RESTAURANT, HOTEL & TOURISM CO., LTD.",
+                    description: "Formulated and orchestrated omnichannel marketing and promotional strategies across 3 corporate subsidiary brands.",
+                    achievements: [
+                        "Engineered full-funnel content and conversion architectures, delivering a +100% surge in social media engagement.",
+                        "Directed end-to-end multimedia asset creation (strategic copywriting, graphic design via Canva/AI/Photoshop, and video editing via CapCut Pro).",
+                        "Cultivated strategic B2B partnerships and amplified brand presence across major industry expos, trade fairs, and regional networking events."
+                    ],
+                    tags: ["Omnichannel Strategy", "Meta Ads", "Google Ads PMax", "Team Leadership"]
+                },
+                {
+                    period: "2023",
+                    role: "Content & Social Media Lead",
+                    company: "IVY COMMERCIAL SERVICES JSC",
+                    description: "Directed creative content development, community building on Facebook, and sustainable inbound marketing funnels for F&B brands.",
+                    achievements: [
+                        "Devised a long-term Inbound Marketing ecosystem across F&B business units, capturing high-intent organic leads and slashing Customer Acquisition Cost (CAC) by 15–20%.",
+                        "Instituted rigorous KPI tracking frameworks and agile content iterations, consistently achieving a 90–100% KPI fulfillment rate across brand activation campaigns.",
+                        "Streamlined influencer onboarding and managed relationships with 20+ relevant KOCs/KOLs under performance-driven booking models.",
+                        "Supervised and mentored a 5-member cross-functional team across Content Writing, Media Production, and Digital Ads."
+                    ],
+                    tags: ["Viral Content", "KOC/KOL Booking", "Community Building"]
+                },
+                {
+                    period: "2021 - 2022",
+                    role: "Copywriter & Marketing Support",
+                    company: "MADIAD TRADING & SERVICE CO., LTD.",
+                    description: "Planned, developed, and managed multi-channel content assets (PR articles, website copy) while supporting offline brand activation events.",
+                    achievements: [
+                        "Ignited organic brand visibility, generating a +101.5% surge in total reach (40,000+) and a +259% increase in page visits (4,000+) via organic content optimization without ad spend.",
+                        "Penned and shaped the signature storytelling series 'Young Entrepreneurs' Stories', generating 2,500+ organic impressions and high engagement.",
+                        "Bridged content strategy with live events; coordinated on-ground operations and captured media assets for a flagship product launch engaging 2,000+ attendees."
+                    ],
+                    tags: ["Copywriting", "Event Activation", "Market Research"]
+                }
+            ],
+            projects: [
+                {
+                    id: 1,
+                    category: "branding",
+                    title: "On The Map",
+                    client: "Community Initiative & Sustainable Development",
+                    image: "assets/images/project-1.jpg",
+                    highlight: "+120% Brand Awareness",
+                    description: "Communicating the 'Sustainable Development' core message by integrating Social Media storytelling with grassroots community initiatives.",
+                    results: [
+                        "Generated 51,000+ Reach and 63,000+ Impressions on Fanpage",
+                        "Captured 798+ total engagements, driving heightened article interest and event registrations",
+                        "Optimized marketing budget with efficient CPM (~7,300 VND) and achieved a top-tier 3.67% content CTR"
+                    ],
+                    tags: ["Brand Identity", "PR & Press", "Social Launch", "Storytelling"]
+                },
+                {
+                    id: 2,
+                    category: "content",
+                    title: "Hai Au Bay",
+                    image: "assets/images/project-2.jpg",
+                    highlight: "+28K Views in 3 Weeks",
+                    description: "Constructed comprehensive topic clusters and cultural storytelling video content to establish thought leadership and attract organic audiences.",
+                    results: [
+                        "Garnered 28,000+ organic views and gained 400+ new YouTube subscribers with highly optimized spend.",
+                        "Mastered the full-cycle YouTube production workflow (scriptwriting, voiceover recording, and performance analytics).",
+                        "Elevated average on-site dwell time (Time on Site) to 4 minutes 15 seconds."
+                    ],
+                    tags: ["Digital Storytelling", "Content Production", "Inbound Marketing"]
+                },
+                {
+                    id: 3,
+                    category: "social",
+                    title: "Viral TikTok Campaign",
+                    client: "Thanh Nhan Education",
+                    image: "assets/images/project-3.jpg",
+                    highlight: "192K+ TikTok Views",
+                    description: "Rolled out a dedicated School News Update content series, effectively reaching target students during the peak National High School Graduation Exam season..",
+                    results: [
+                        "Scripted and directed a high-velocity sprint of 50+ TikTok video assets.",
+                        "Produced a flagship breakout video achieving 192,000+ 100% organic views with $0 ad budget.",
+                        "100% of campaign videos exceeded the 1,000+ views milestone."
+                    ],
+                    tags: ["Short-Form Content", "TikTok Strategy", "Creative Direction", "Viral Video"]
+                }
+            ]
+        },
+
+        skills: {
+            sectionBadge: "Expertise & Skills",
+            title: "Core Marketing Toolset & Capabilities",
+            subtitle: "A balanced synergy of strategic planning, quantitative analytics, and relentless creativity",
+            categories: [
+                {
+                    name: "Digital Ads & Performance",
+                    icon: "target",
+                    skills: [
+                        { name: "Meta Ads (Facebook)", level: 95 },
+                        { name: "TikTok Ads & TikTok Shop", level: 88 },
+                        { name: "Re-marketing & Conversion Funnel", level: 92 }
+                    ]
+                },
+                {
+                    name: "Content & Brand Strategy",
+                    icon: "feather",
+                    skills: [
+                        { name: "Omnichannel Content Strategy", level: 95 },
+                        { name: "Copywriting & Storytelling", level: 92 },
+                        { name: "SEO On-page / Topic Clusters", level: 85 },
+                        { name: "KOL / KOC Booking & Influencer Relations", level: 90 }
+                    ]
+                },
+                {
+                    name: "Analytics & Creative Tools",
+                    icon: "pie-chart",
+                    skills: [
+                        { name: "Google Analytics 4 (GA4) & GTM", level: 90 },
+                        { name: "Looker Studio Dashboard & Data Analysis", level: 85 },
+                        { name: "Canva, Photoshop & Visual Concept", level: 90 },
+                        { name: "CapCut & Video Short-form Editing", level: 88 }
+                    ]
+                },
+                {
+                    name: "Leadership & Management",
+                    icon: "users",
+                    skills: [
+                        { name: "Budget Allocation & KPI Forecasting", level: 92 },
+                        { name: "Campaign Management & Orchestration", level: 95 },
+                        { name: "Critical Thinking & Problem Solving", level: 85 },
+                        { name: "Pitching & Negotiation", level: 88 }
+                    ]
+                }
+            ]
+        },
+
+        education: {
+            sectionBadge: "Education & Credentials",
+            title: "Academic Background & Professional Certifications",
+            subtitle: "Continuously upgrading industry standards to stay ahead of marketing trends",
+            degreesTitle: "Academic Degree",
+            certificationsTitle: "Professional Certifications",
+            degrees: [
+                {
+                    degree: "Bachelor of International Business",
+                    school: "Can Tho University (CTU)",
+                    period: "2018 - 2022",
+                    details: "Achieved outstanding distinction at the Starship - Star Awards 2020."
+                }
+            ],
+            certifications: [
+                {
+                    name: "Performance Creative Certification",
+                    issuer: "GIGAN JSC",
+                    year: "2025",
+                    icon: "award",
+                    code: "Verified Certificate"
+                },
+                {
+                    name: "Illustrator Graphics Basic to Intermediate",
+                    issuer: "Keyframe Multimedia School",
+                    year: "2023",
+                    icon: "award",
+                    code: "Verified Certificate"
+                }
+            ]
+        },
+
+        contact: {
+            sectionBadge: "Get In Touch",
+            title: "Let's Build Impactful Campaigns Together",
+            subtitle: "Have a new vision or need a passionate marketing partner? Drop me a line anytime!",
+            infoTitle: "Contact Information",
+            formTitle: "Send Me a Message",
+            labels: {
+                fullName: "Your Full Name",
+                email: "Email Address",
+                subject: "Subject / Service Needed",
+                message: "Your Message",
+                sendBtn: "Send Message Now",
+                sending: "Sending...",
+                success: "Thank you! Your message has been sent successfully. I will get back to you shortly!"
+            },
+            subjects: [
+                "Full Marketing Strategy Consultation",
+                "Performance Ads & Funnel Optimization",
+                "Content Marketing & Viral TikTok Campaign",
+                "Partnership / Job Opportunity",
+                "Other"
+            ]
+        },
+
+        footer: {
+            rights: "All rights reserved.",
+            builtWith: "Designed with passion & creativity for modern personal branding."
+        }
+    },
+
+    // Gallery images mapping (4 moments)
+    gallery: [
+        { src: "assets/images/gallery-1.jpg" },
+        { src: "assets/images/gallery-2.jpg" },
+        { src: "assets/images/gallery-3.jpg" },
+        { src: "assets/images/gallery-4.jpg" }
+    ]
+};
+    </script>
+    <script>
+/**
+ * MAIN JAVASCRIPT - PORTFOLIO INTERACTION & BILINGUAL RENDERING
+ * -------------------------------------------------------------
+ */
+
+// Application State
+const state = {
+    lang: localStorage.getItem('portfolio_lang') || (window.profileData && window.profileData.config && window.profileData.config.defaultLang) || 'vi',
+    theme: localStorage.getItem('portfolio_theme') || (window.profileData && window.profileData.config && window.profileData.config.defaultTheme) || 'light',
+    activeProjectFilter: 'all',
+    lightboxIndex: 0,
+    typewriterTimeout: null
+};
+
+// DOM Elements
+const elements = {
+    html: document.documentElement,
+    langToggle: document.getElementById('lang-toggle'),
+    langText: document.getElementById('lang-text'),
+    themeToggle: document.getElementById('theme-toggle'),
+    themeIcon: document.getElementById('theme-icon'),
+    mobileMenuBtn: document.getElementById('mobile-menu-btn'),
+    mobileMenu: document.getElementById('mobile-menu'),
+    scrollProgress: document.getElementById('scroll-progress'),
+    backToTopBtn: document.getElementById('back-to-top'),
+    lightboxModal: document.getElementById('lightbox-modal'),
+    lightboxImg: document.getElementById('lightbox-img'),
+    lightboxCaption: document.getElementById('lightbox-caption'),
+    lightboxClose: document.getElementById('lightbox-close'),
+    lightboxPrev: document.getElementById('lightbox-prev'),
+    lightboxNext: document.getElementById('lightbox-next'),
+    contactForm: document.getElementById('contact-form'),
+    toast: document.getElementById('toast-notification'),
+    toastMsg: document.getElementById('toast-message'),
+    typewriterText: document.getElementById('typewriter-text')
+};
+
+// Initialize Application
+document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
+    initLanguage();
+    initScrollEvents();
+    initLightbox();
+    initContactForm();
+    initMobileMenu();
+});
+
+/* ==========================================================================
+   THEME TOGGLE (DARK / LIGHT MODE)
+   ========================================================================== */
+function initTheme() {
+    if (state.theme === 'light') {
+        elements.html.classList.add('light');
+        updateThemeIcon('sun');
+    } else {
+        elements.html.classList.remove('light');
+        updateThemeIcon('moon');
+    }
+
+    if (elements.themeToggle) {
+        elements.themeToggle.addEventListener('click', toggleTheme);
+    }
+}
+
+function toggleTheme() {
+    if (elements.html.classList.contains('light')) {
+        elements.html.classList.remove('light');
+        state.theme = 'dark';
+        updateThemeIcon('moon');
+    } else {
+        elements.html.classList.add('light');
+        state.theme = 'light';
+        updateThemeIcon('sun');
+    }
+    localStorage.setItem('portfolio_theme', state.theme);
+}
+
+function updateThemeIcon(type) {
+    if (!elements.themeIcon) return;
+    elements.themeIcon.setAttribute('data-lucide', type === 'sun' ? 'sun' : 'moon');
+    if (window.lucide) lucide.createIcons();
+}
+
+/* ==========================================================================
+   LANGUAGE SWITCHER (VI / EN)
+   ========================================================================== */
+function initLanguage() {
+    if (elements.langToggle) {
+        elements.langToggle.addEventListener('click', toggleLanguage);
+    }
+    applyLanguage(state.lang);
+}
+
+function toggleLanguage() {
+    state.lang = state.lang === 'vi' ? 'en' : 'vi';
+    localStorage.setItem('portfolio_lang', state.lang);
+    applyLanguage(state.lang);
+}
+
+function applyLanguage(lang) {
+    const data = profileData[lang] || profileData.vi;
+    
+    // Update language switch button text & flag
+    if (elements.langText) {
+        elements.langText.textContent = lang === 'vi' ? 'ðŸ‡»ðŸ‡³ VI' : 'ðŸ‡¬ðŸ‡§ EN';
+    }
+    elements.html.setAttribute('lang', lang);
+
+    // Render Navigation
+    renderNav(data.nav);
+
+    // Render Hero Section
+    renderHero(data.hero);
+
+    // Render About Section
+    renderAbout(data.about);
+
+    // Render Experiences & Projects
+    renderExperiences(data.experiences);
+
+    // Render Skills
+    renderSkills(data.skills);
+
+    // Render Education & Certifications
+    renderEducation(data.education);
+
+    // Render Contact
+    renderContact(data.contact);
+
+    // Render Footer
+    renderFooter(data.footer);
+
+    // Re-initialize Lucide Icons
+    if (window.lucide) {
+        lucide.createIcons();
+    }
+
+    // Re-start typewriter animation with new language roles
+    initTypewriter(data.hero.roles);
+}
+
+/* ==========================================================================
+   SECTION RENDERERS
+   ========================================================================== */
+
+function renderNav(nav) {
+    const navLinks = {
+        'nav-home': nav.home,
+        'nav-about': nav.about,
+        'nav-experiences': nav.experiences,
+        'nav-skills': nav.skills,
+        'nav-education': nav.education,
+        'nav-contact': nav.contact,
+        'nav-cv': nav.downloadCv,
+        // Mobile nav
+        'm-nav-home': nav.home,
+        'm-nav-about': nav.about,
+        'm-nav-experiences': nav.experiences,
+        'm-nav-skills': nav.skills,
+        'm-nav-education': nav.education,
+        'm-nav-contact': nav.contact,
+        'm-nav-cv': nav.downloadCv
+    };
+
+    for (const [id, text] of Object.entries(navLinks)) {
+        const el = document.getElementById(id);
+        if (el) el.textContent = text;
+    }
+}
+
+function renderHero(hero) {
+    const greetingEl = document.getElementById('hero-greeting');
+    const nameEl = document.getElementById('hero-name');
+    const taglineEl = document.getElementById('hero-tagline');
+    const ctaProjectsEl = document.getElementById('hero-cta-projects');
+    const ctaContactEl = document.getElementById('hero-cta-contact');
+    const statusEl = document.getElementById('hero-status');
+    const expBadgeEl = document.getElementById('hero-exp-badge');
+    const roasBadgeEl = document.getElementById('hero-roas-badge');
+    const avatarImgEl = document.getElementById('hero-avatar-img');
+
+    if (greetingEl) greetingEl.textContent = hero.greeting;
+    if (nameEl) nameEl.textContent = hero.name;
+    if (taglineEl) taglineEl.textContent = hero.tagline;
+    if (ctaProjectsEl) ctaProjectsEl.textContent = hero.ctaProjects;
+    if (ctaContactEl) ctaContactEl.textContent = hero.ctaContact;
+    if (statusEl) statusEl.textContent = hero.statusAvailable;
+    if (expBadgeEl) expBadgeEl.textContent = hero.experienceBadge;
+    if (roasBadgeEl) roasBadgeEl.textContent = hero.roasBadge;
+    if (avatarImgEl) {
+        avatarImgEl.onerror = function() {
+            if (this.src.includes('.png')) {
+                this.src = 'assets/images/avatar.jpg';
+            } else if (this.src.includes('.jpg')) {
+                this.src = 'assets/images/avatar.png';
+            }
+        };
+        if (profileData.config.avatarUrl) {
+            avatarImgEl.src = profileData.config.avatarUrl;
+        }
+    }
+}
+
+function renderAbout(about) {
+    const badgeEl = document.getElementById('about-badge');
+    const titleEl = document.getElementById('about-title');
+    const subtitleEl = document.getElementById('about-subtitle');
+    const p1El = document.getElementById('about-p1');
+    const p2El = document.getElementById('about-p2');
+    const statsContainer = document.getElementById('about-stats');
+    const quickInfoContainer = document.getElementById('about-quick-info');
+    const galleryTitleEl = document.getElementById('about-gallery-title');
+    const gallerySubtitleEl = document.getElementById('about-gallery-subtitle');
+    const galleryContainer = document.getElementById('about-gallery-grid');
+
+    if (badgeEl) badgeEl.textContent = about.sectionBadge;
+    if (titleEl) titleEl.textContent = about.title;
+    if (subtitleEl) subtitleEl.textContent = about.subtitle;
+    if (p1El) p1El.innerHTML = about.bioParagraph1;
+    if (p2El) p2El.innerHTML = about.bioParagraph2;
+    if (galleryTitleEl) galleryTitleEl.textContent = about.galleryTitle;
+    if (gallerySubtitleEl) gallerySubtitleEl.textContent = about.gallerySubtitle;
+
+    // Render Stats
+    if (statsContainer) {
+        statsContainer.innerHTML = about.stats.map(stat => `
+            <div class="glass-card p-5 text-center flex flex-col items-center justify-center">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-500 flex items-center justify-center mb-3">
+                    <i data-lucide="${stat.icon}" class="w-6 h-6"></i>
+                </div>
+                <div class="text-3xl font-extrabold gradient-text mb-1">${stat.value}</div>
+                <div class="text-sm font-medium text-slate-400 dark:text-slate-400">${stat.label}</div>
+            </div>
+        `).join('');
+    }
+
+    // Render Quick Info
+    if (quickInfoContainer) {
+        quickInfoContainer.innerHTML = about.quickInfo.map(item => `
+            <div class="flex items-start gap-3 p-3 rounded-lg bg-slate-500/5 border border-slate-500/10">
+                <div class="w-2 h-2 rounded-full bg-indigo-500 mt-2"></div>
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">${item.label}:</span>
+                    <p class="text-sm font-medium text-slate-200 dark:text-slate-200 mt-0.5">${item.value}</p>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // Render Gallery (Clean images without text captions)
+    if (galleryContainer && profileData.gallery) {
+        galleryContainer.innerHTML = profileData.gallery.map((img, idx) => `
+            <div class="gallery-img-container aspect-square glass-card overflow-hidden group cursor-pointer" onclick="openLightbox(${idx})">
+                <img src="${img.src}" alt="Gallery Image ${idx + 1}" class="gallery-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                <div class="gallery-overlay">
+                    <div class="text-white bg-black/60 backdrop-blur-md p-3 rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-lg">
+                        <i data-lucide="maximize-2" class="w-5 h-5"></i>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
+}
+
+function renderExperiences(exp) {
+    const badgeEl = document.getElementById('exp-badge');
+    const titleEl = document.getElementById('exp-title');
+    const subtitleEl = document.getElementById('exp-subtitle');
+    const timelineTitleEl = document.getElementById('exp-timeline-title');
+    const projectsTitleEl = document.getElementById('exp-projects-title');
+    const timelineContainer = document.getElementById('exp-timeline');
+    const filterContainer = document.getElementById('project-filters');
+
+    if (badgeEl) badgeEl.textContent = exp.sectionBadge;
+    if (titleEl) titleEl.textContent = exp.title;
+    if (subtitleEl) subtitleEl.textContent = exp.subtitle;
+    if (timelineTitleEl) timelineTitleEl.textContent = exp.timelineTitle;
+    if (projectsTitleEl) projectsTitleEl.textContent = exp.projectsTitle;
+
+    // Render Timeline
+    if (timelineContainer) {
+        timelineContainer.innerHTML = exp.timeline.map(item => `
+            <div class="timeline-item mb-10 last:mb-0">
+                <div class="timeline-dot"></div>
+                <div class="glass-card p-6 ml-2">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                        <h4 class="text-lg font-bold text-slate-100">${item.role}</h4>
+                        <span class="text-xs font-bold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">${item.period}</span>
+                    </div>
+                    <div class="text-sm font-semibold text-indigo-400/90 mb-3">${item.company}</div>
+                    <p class="text-sm text-slate-300 mb-4">${item.description}</p>
+                    <ul class="space-y-2 mb-4 text-xs text-slate-400">
+                        ${item.achievements.map(ach => `
+                            <li class="flex items-start gap-2">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+                                <span>${ach}</span>
+                            </li>
+                        `).join('')}
+                    </ul>
+                    <div class="flex flex-wrap gap-1.5 pt-2 border-t border-slate-700/50">
+                        ${item.tags.map(tag => `
+                            <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">${tag}</span>
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // Render Project Filter Buttons
+    if (filterContainer) {
+        filterContainer.innerHTML = Object.entries(exp.categories).map(([key, label]) => `
+            <button class="filter-btn ${state.activeProjectFilter === key ? 'active' : ''}" onclick="filterProjects('${key}')">
+                ${label}
+            </button>
+        `).join('');
+    }
+
+    // Render Project Cards
+    renderProjectsList(exp.projects);
+}
+
+function filterProjects(category) {
+    state.activeProjectFilter = category;
+    const data = profileData[state.lang] || profileData.vi;
+    
+    // Update active class on buttons
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    const currentBtn = Array.from(document.querySelectorAll('.filter-btn')).find(b => 
+        b.textContent.trim() === data.experiences.categories[category]
+    );
+    if (currentBtn) currentBtn.classList.add('active');
+
+    renderProjectsList(data.experiences.projects);
+}
+
+function renderProjectsList(projects) {
+    const container = document.getElementById('projects-grid');
+    if (!container) return;
+
+    const filtered = state.activeProjectFilter === 'all' 
+        ? projects 
+        : projects.filter(p => p.category === state.activeProjectFilter);
+
+    container.innerHTML = filtered.map(proj => `
+        <div class="glass-card overflow-hidden flex flex-col group">
+            <div class="relative aspect-video overflow-hidden">
+                <img src="${proj.image}" alt="${proj.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute top-3 right-3 bg-indigo-600/90 text-white backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                    ${proj.highlight}
+                </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-semibold text-indigo-400 uppercase tracking-wider mb-1">${proj.client}</div>
+                    <h4 class="text-lg font-bold text-slate-100 mb-3">${proj.title}</h4>
+                    <p class="text-sm text-slate-300 mb-4">${proj.description}</p>
+                    <div class="space-y-1.5 mb-4 bg-slate-900/40 p-3 rounded-lg border border-slate-800">
+                        <div class="text-xs font-semibold text-slate-400 uppercase">${state.lang === 'vi' ? 'Káº¿t quáº£ Ä‘áº¡t Ä‘Æ°á»£c:' : 'Key Outcomes:'}</div>
+                        ${proj.results.map(r => `
+                            <div class="text-xs text-slate-300 flex items-center gap-2">
+                                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-indigo-400"></i>
+                                <span>${r}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-700/50">
+                    ${proj.tags.map(t => `
+                        <span class="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">${t}</span>
+                    `).join('')}
+                </div>
+            </div>
+        </div>
+    `).join('');
+
+    if (window.lucide) lucide.createIcons();
+}
+
+function renderSkills(skills) {
+    const badgeEl = document.getElementById('skills-badge');
+    const titleEl = document.getElementById('skills-title');
+    const subtitleEl = document.getElementById('skills-subtitle');
+    const container = document.getElementById('skills-grid');
+
+    if (badgeEl) badgeEl.textContent = skills.sectionBadge;
+    if (titleEl) titleEl.textContent = skills.title;
+    if (subtitleEl) subtitleEl.textContent = skills.subtitle;
+
+    if (container) {
+        container.innerHTML = skills.categories.map(cat => `
+            <div class="glass-card p-6">
+                <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-700/50">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+                        <i data-lucide="${cat.icon}" class="w-5 h-5"></i>
+                    </div>
+                    <h4 class="text-base font-bold text-slate-100">${cat.name}</h4>
+                </div>
+                <div class="space-y-5">
+                    ${cat.skills.map(s => `
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1.5">
+                                <span class="text-slate-200">${s.name}</span>
+                                <span class="text-indigo-400">${s.level}%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: ${s.level}%;"></div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `).join('');
+    }
+}
+
+function renderEducation(edu) {
+    const badgeEl = document.getElementById('edu-badge');
+    const titleEl = document.getElementById('edu-title');
+    const subtitleEl = document.getElementById('edu-subtitle');
+    const degreesTitleEl = document.getElementById('edu-degrees-title');
+    const certsTitleEl = document.getElementById('edu-certs-title');
+    const degreesContainer = document.getElementById('edu-degrees-list');
+    const certsContainer = document.getElementById('edu-certs-grid');
+
+    if (badgeEl) badgeEl.textContent = edu.sectionBadge;
+    if (titleEl) titleEl.textContent = edu.title;
+    if (subtitleEl) subtitleEl.textContent = edu.subtitle;
+    if (degreesTitleEl) degreesTitleEl.textContent = edu.degreesTitle;
+    if (certsTitleEl) certsTitleEl.textContent = edu.certificationsTitle;
+
+    // Degrees
+    if (degreesContainer) {
+        degreesContainer.innerHTML = edu.degrees.map(deg => `
+            <div class="glass-card p-6 relative overflow-hidden">
+                <div class="flex flex-wrap items-start justify-between gap-2 mb-2">
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-100">${deg.degree}</h4>
+                        <div class="text-sm font-semibold text-indigo-400 mt-1">${deg.school}</div>
+                    </div>
+                    <span class="text-xs font-bold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">${deg.period}</span>
+                </div>
+                ${deg.grade ? `<div class="text-xs font-semibold text-emerald-400 mb-2">${deg.grade}</div>` : ''}
+                <p class="text-xs text-slate-300 leading-relaxed">${deg.details || ''}</p>
+            </div>
+        `).join('');
+    }
+
+    // Certifications
+    if (certsContainer) {
+        certsContainer.innerHTML = edu.certifications.map(cert => `
+            <div class="glass-card p-5 flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                    <i data-lucide="award" class="w-5 h-5"></i>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center justify-between gap-1">
+                        <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">${cert.issuer}</span>
+                        <span class="text-[11px] font-bold text-indigo-400">${cert.year}</span>
+                    </div>
+                    <h5 class="text-sm font-bold text-slate-100 mt-0.5 truncate">${cert.name}</h5>
+                    <div class="text-[11px] text-slate-400 mt-1 flex items-center gap-1">
+                        <i data-lucide="check" class="w-3 h-3 text-emerald-400"></i>
+                        <span>${cert.code}</span>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
+}
+
+function renderContact(contact) {
+    const badgeEl = document.getElementById('contact-badge');
+    const titleEl = document.getElementById('contact-title');
+    const subtitleEl = document.getElementById('contact-subtitle');
+    const infoTitleEl = document.getElementById('contact-info-title');
+    const formTitleEl = document.getElementById('contact-form-title');
+    
+    const labelName = document.getElementById('label-name');
+    const labelEmail = document.getElementById('label-email');
+    const labelSubject = document.getElementById('label-subject');
+    const labelMessage = document.getElementById('label-message');
+    const sendBtn = document.getElementById('contact-submit-btn');
+    const subjectSelect = document.getElementById('contact-subject');
+
+    if (badgeEl) badgeEl.textContent = contact.sectionBadge;
+    if (titleEl) titleEl.textContent = contact.title;
+    if (subtitleEl) subtitleEl.textContent = contact.subtitle;
+    if (infoTitleEl) infoTitleEl.textContent = contact.infoTitle;
+    if (formTitleEl) formTitleEl.textContent = contact.formTitle;
+
+    if (labelName) labelName.textContent = contact.labels.fullName;
+    if (labelEmail) labelEmail.textContent = contact.labels.email;
+    if (labelSubject) labelSubject.textContent = contact.labels.subject;
+    if (labelMessage) labelMessage.textContent = contact.labels.message;
+    if (sendBtn) {
+        sendBtn.innerHTML = `<span>${contact.labels.sendBtn}</span> <i data-lucide="send" class="w-4 h-4 ml-2"></i>`;
+    }
+
+    if (subjectSelect && contact.subjects) {
+        subjectSelect.innerHTML = contact.subjects.map(s => `<option value="${s}">${s}</option>`).join('');
+    }
+
+    // Contact info items
+    const emailEl = document.getElementById('contact-email-val');
+    const phoneEl = document.getElementById('contact-phone-val');
+    const locEl = document.getElementById('contact-loc-val');
+
+    if (emailEl) {
+        emailEl.textContent = profileData.config.email;
+        const emailLink = emailEl.closest('a');
+        if (emailLink) emailLink.href = `mailto:${profileData.config.email}`;
+    }
+    if (phoneEl) {
+        phoneEl.textContent = profileData.config.phone;
+        const phoneLink = phoneEl.closest('a');
+        if (phoneLink) phoneLink.href = `tel:${profileData.config.phone.replace(/[\s\-\(\)]/g, '')}`;
+    }
+    if (locEl) {
+        locEl.textContent = (profileData.config.location && profileData.config.location[state.lang]) || 'Viá»‡t Nam';
+    }
+}
+
+function renderFooter(footer) {
+    const rightsEl = document.getElementById('footer-rights');
+    const builtEl = document.getElementById('footer-built');
+    const footerBrandName = document.getElementById('footer-brand-name');
+    const headerBrandName = document.getElementById('header-brand-name');
+    const year = new Date().getFullYear();
+    const brandName = state.lang === 'vi' ? 'YEN LUU' : 'OLWEN LUU';
+    const headerName = state.lang === 'vi' ? 'Yáº¾N LÆ¯U' : 'OLWEN LUU';
+
+    if (headerBrandName) headerBrandName.textContent = headerName;
+    if (footerBrandName) footerBrandName.textContent = brandName;
+    if (rightsEl) rightsEl.textContent = `Â© ${year} ${brandName}. ${footer.rights}`;
+    if (builtEl) builtEl.textContent = footer.builtWith;
+}
+
+/* ==========================================================================
+   DYNAMIC TYPEWRITER EFFECT
+   ========================================================================== */
+let typewriterCharIndex = 0;
+let typewriterRoleIndex = 0;
+let typewriterIsDeleting = false;
+
+function initTypewriter(roles) {
+    if (state.typewriterTimeout) {
+        clearTimeout(state.typewriterTimeout);
+    }
+    typewriterCharIndex = 0;
+    typewriterRoleIndex = 0;
+    typewriterIsDeleting = false;
+    typewriterTick(roles);
+}
+
+function typewriterTick(roles) {
+    if (!elements.typewriterText || !roles || roles.length === 0) return;
+
+    const currentRole = roles[typewriterRoleIndex];
+    
+    if (typewriterIsDeleting) {
+        elements.typewriterText.textContent = currentRole.substring(0, typewriterCharIndex - 1);
+        typewriterCharIndex--;
+    } else {
+        elements.typewriterText.textContent = currentRole.substring(0, typewriterCharIndex + 1);
+        typewriterCharIndex++;
+    }
+
+    let speed = typewriterIsDeleting ? 40 : 80;
+
+    if (!typewriterIsDeleting && typewriterCharIndex === currentRole.length) {
+        speed = 2000; // Pause at end of word
+        typewriterIsDeleting = true;
+    } else if (typewriterIsDeleting && typewriterCharIndex === 0) {
+        typewriterIsDeleting = false;
+        typewriterRoleIndex = (typewriterRoleIndex + 1) % roles.length;
+        speed = 500;
+    }
+
+    state.typewriterTimeout = setTimeout(() => typewriterTick(roles), speed);
+}
+
+/* ==========================================================================
+   SCROLL EVENTS (PROGRESS BAR, BACK TO TOP & SCROLLSPY)
+   ========================================================================== */
+function initScrollEvents() {
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (scrollTop / docHeight) * 100;
+
+        if (elements.scrollProgress) {
+            elements.scrollProgress.style.width = `${progress}%`;
+        }
+
+        if (elements.backToTopBtn) {
+            if (scrollTop > 400) {
+                elements.backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                elements.backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+            } else {
+                elements.backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                elements.backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+            }
+        }
+
+        // ScrollSpy Active Nav Highlight
+        const sections = document.querySelectorAll('section[id]');
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 120;
+            const sectionHeight = section.offsetHeight;
+            const id = section.getAttribute('id');
+            const link = document.querySelector(`.nav-link[href="#${id}"]`);
+
+            if (scrollTop >= sectionTop && scrollTop < sectionTop + sectionHeight) {
+                document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('text-indigo-400', 'font-bold'));
+                if (link) link.classList.add('text-indigo-400', 'font-bold');
+            }
+        });
+    });
+
+    if (elements.backToTopBtn) {
+        elements.backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+}
+
+/* ==========================================================================
+   LIGHTBOX MODAL
+   ========================================================================== */
+function initLightbox() {
+    if (elements.lightboxClose) {
+        elements.lightboxClose.addEventListener('click', closeLightbox);
+    }
+    if (elements.lightboxPrev) {
+        elements.lightboxPrev.addEventListener('click', () => changeLightboxImage(-1));
+    }
+    if (elements.lightboxNext) {
+        elements.lightboxNext.addEventListener('click', () => changeLightboxImage(1));
+    }
+
+    if (elements.lightboxModal) {
+        elements.lightboxModal.addEventListener('click', (e) => {
+            if (e.target === elements.lightboxModal) closeLightbox();
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (!elements.lightboxModal.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') changeLightboxImage(-1);
+        if (e.key === 'ArrowRight') changeLightboxImage(1);
+    });
+}
+
+function openLightbox(index) {
+    if (!profileData.gallery || !profileData.gallery[index]) return;
+    state.lightboxIndex = index;
+    updateLightboxContent();
+    elements.lightboxModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    elements.lightboxModal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function changeLightboxImage(direction) {
+    const total = profileData.gallery.length;
+    state.lightboxIndex = (state.lightboxIndex + direction + total) % total;
+    updateLightboxContent();
+}
+
+function updateLightboxContent() {
+    const item = profileData.gallery[state.lightboxIndex];
+    if (!item) return;
+    elements.lightboxImg.src = item.src;
+    if (elements.lightboxCaption) {
+        const caption = state.lang === 'vi' ? item.captionVi : item.captionEn;
+        if (caption) {
+            elements.lightboxCaption.textContent = caption;
+            elements.lightboxCaption.style.display = 'block';
+        } else {
+            elements.lightboxCaption.textContent = '';
+            elements.lightboxCaption.style.display = 'none';
+        }
+    }
+}
+
+/* ==========================================================================
+   CONTACT FORM & TOAST
+   ========================================================================== */
+function initContactForm() {
+    if (!elements.contactForm) return;
+
+    elements.contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitBtn = elements.contactForm.querySelector('button[type="submit"]');
+        const langData = profileData[state.lang] || profileData.vi;
+
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<span>${langData.contact.labels.sending}</span> <i data-lucide="loader-2" class="w-4 h-4 ml-2 animate-spin"></i>`;
+            if (window.lucide) lucide.createIcons();
+        }
+
+        // Simulate network submission
+        setTimeout(() => {
+            if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `<span>${langData.contact.labels.sendBtn}</span> <i data-lucide="send" class="w-4 h-4 ml-2"></i>`;
+                if (window.lucide) lucide.createIcons();
+            }
+
+            elements.contactForm.reset();
+            showToast(langData.contact.labels.success);
+        }, 900);
+    });
+}
+
+function showToast(message) {
+    if (!elements.toast || !elements.toastMsg) return;
+    elements.toastMsg.textContent = message;
+    elements.toast.classList.add('show');
+
+    setTimeout(() => {
+        elements.toast.classList.remove('show');
+    }, 4500);
+}
+
+/* ==========================================================================
+   VISUAL IN-BROWSER QUICK EDITOR (CHá»ˆNH Sá»¬A TRá»°C QUAN Má»ŒI LÃšC Má»ŒI NÆ I)
+   ========================================================================== */
+function initQuickEditor() {
+    const editBtn = document.getElementById('open-editor-btn');
+    const editorModal = document.getElementById('editor-modal');
+    const closeBtn = document.getElementById('close-editor-btn');
+    const savePreviewBtn = document.getElementById('editor-save-preview');
+    const downloadJsBtn = document.getElementById('editor-download-js');
+    const copyCodeBtn = document.getElementById('editor-copy-code');
+
+    if (!editBtn || !editorModal) return;
+
+    // Open Modal
+    editBtn.addEventListener('click', () => {
+        populateEditorFields();
+        editorModal.classList.remove('hidden');
+        editorModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    });
+
+    // Close Modal
+    const closeModal = () => {
+        editorModal.classList.add('hidden');
+        editorModal.classList.remove('flex');
+        document.body.style.overflow = '';
+    };
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    editorModal.addEventListener('click', (e) => {
+        if (e.target === editorModal) closeModal();
+    });
+
+    // Keyboard shortcut (Ctrl + Shift + E)
+    document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey && e.shiftKey && (e.key === 'E' || e.key === 'e')) {
+            e.preventDefault();
+            editBtn.click();
+        }
+    });
+
+    // File input avatar reader
+    const avatarFileInput = document.getElementById('edit-avatar-file');
+    const avatarTextInput = document.getElementById('edit-avatar');
+    const avatarPreviewImg = document.getElementById('edit-avatar-preview');
+
+    if (avatarFileInput) {
+        avatarFileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (event) => {
+                    const result = event.target.result;
+                    if (avatarPreviewImg) avatarPreviewImg.src = result;
+                    if (avatarTextInput) avatarTextInput.value = result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    }
+
+    if (avatarTextInput) {
+        avatarTextInput.addEventListener('input', (e) => {
+            const val = e.target.value.trim();
+            if (avatarPreviewImg && val) {
+                avatarPreviewImg.src = val;
+            }
+        });
+    }
+
+    // Populate current values into form inputs
+    function populateEditorFields() {
+        const d = profileData;
+        const setVal = (id, val) => {
+            const el = document.getElementById(id);
+            if (el && val !== undefined) el.value = val;
+        };
+
+        const currentAvatar = d.config.avatarUrl || 'assets/images/avatar.jpg';
+        setVal('edit-name', d.vi.hero.name);
+        setVal('edit-avatar', currentAvatar);
+        if (avatarPreviewImg) avatarPreviewImg.src = currentAvatar;
+        setVal('edit-email', d.config.email);
+        setVal('edit-phone', d.config.phone);
+        setVal('edit-location-vi', d.config.location.vi);
+        setVal('edit-location-en', d.config.location.en);
+        setVal('edit-tagline-vi', d.vi.hero.tagline);
+        setVal('edit-tagline-en', d.en.hero.tagline);
+        setVal('edit-bio-vi', d.vi.about.bioParagraph1);
+        setVal('edit-bio-en', d.en.about.bioParagraph1);
+        setVal('edit-linkedin', d.config.socials && d.config.socials.linkedin);
+        setVal('edit-facebook', d.config.socials && d.config.socials.facebook);
+        setVal('edit-tiktok', d.config.socials && d.config.socials.tiktok);
+        setVal('edit-cv-url', d.config.cvUrl);
+    }
+
+    // Apply values to memory & re-render
+    function applyEditorValues() {
+        const getVal = (id) => (document.getElementById(id) ? document.getElementById(id).value.trim() : '');
+
+        const name = getVal('edit-name') || profileData.vi.hero.name;
+        const avatarUrl = getVal('edit-avatar') || profileData.config.avatarUrl || 'assets/images/avatar.jpg';
+        const email = getVal('edit-email') || profileData.config.email;
+        const phone = getVal('edit-phone') || profileData.config.phone;
+        const locVi = getVal('edit-location-vi') || (profileData.config.location && profileData.config.location.vi);
+        const locEn = getVal('edit-location-en') || (profileData.config.location && profileData.config.location.en);
+        const taglineVi = getVal('edit-tagline-vi') || profileData.vi.hero.tagline;
+        const taglineEn = getVal('edit-tagline-en') || profileData.en.hero.tagline;
+        const bioVi = getVal('edit-bio-vi') || profileData.vi.about.bioParagraph1;
+        const bioEn = getVal('edit-bio-en') || profileData.en.about.bioParagraph1;
+        const linkedin = getVal('edit-linkedin');
+        const facebook = getVal('edit-facebook');
+        const tiktok = getVal('edit-tiktok');
+        const cvUrl = getVal('edit-cv-url');
+
+        // Update profileData in memory
+        profileData.vi.hero.name = name;
+        profileData.en.hero.name = name;
+        profileData.config.avatarUrl = avatarUrl;
+        profileData.config.email = email;
+        profileData.config.phone = phone;
+        if (!profileData.config.location) profileData.config.location = {};
+        profileData.config.location.vi = locVi;
+        profileData.config.location.en = locEn;
+        profileData.vi.hero.tagline = taglineVi;
+        profileData.en.hero.tagline = taglineEn;
+        profileData.vi.about.bioParagraph1 = bioVi;
+        profileData.en.about.bioParagraph1 = bioEn;
+        if (!profileData.config.socials) profileData.config.socials = {};
+        profileData.config.socials.linkedin = linkedin;
+        profileData.config.socials.facebook = facebook;
+        profileData.config.socials.tiktok = tiktok;
+        profileData.config.cvUrl = cvUrl;
+
+        // Re-apply to current page
+        applyLanguage(state.lang);
+        showToast(state.lang === 'vi' ? 'ÄÃ£ cáº­p nháº­t hiá»ƒn thá»‹ xem trÆ°á»›c thÃ nh cÃ´ng!' : 'Preview updated successfully!');
+    }
+
+    // Save & Preview
+    if (savePreviewBtn) {
+        savePreviewBtn.addEventListener('click', () => {
+            applyEditorValues();
+            closeModal();
+        });
+    }
+
+    // Generate Javascript Code String
+    function generateJsString() {
+        applyEditorValues();
+        return `/**\n * PORTFOLIO DATA CONFIGURATION (Song ngá»¯: Tiáº¿ng Viá»‡t & English)\n * Tá»± Ä‘á»™ng táº¡o bá»Ÿi TrÃ¬nh Chá»‰nh Sá»­a Trá»±c Quan\n */\nconst profileData = ${JSON.stringify(profileData, null, 4)};\n`;
+    }
+
+    // Download updated profileData.js
+    if (downloadJsBtn) {
+        downloadJsBtn.addEventListener('click', () => {
+            const content = generateJsString();
+            const blob = new Blob([content], { type: 'text/javascript;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'profileData.js';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast(state.lang === 'vi' ? 'ÄÃ£ táº£i file profileData.js má»›i vá» mÃ¡y!' : 'profileData.js downloaded!');
+        });
+    }
+
+    // Copy Code to Clipboard
+    if (copyCodeBtn) {
+        copyCodeBtn.addEventListener('click', () => {
+            const content = generateJsString();
+            navigator.clipboard.writeText(content).then(() => {
+                showToast(state.lang === 'vi' ? 'ÄÃ£ sao chÃ©p toÃ n bá»™ mÃ£ vÃ o Clipboard!' : 'Code copied to clipboard!');
+            }).catch(() => {
+                alert('Vui lÃ²ng cáº¥p quyá»n sao chÃ©p trÃªn trÃ¬nh duyá»‡t');
+            });
+        });
+    }
+}
+
+// Call initQuickEditor in DOMContentLoaded
+document.addEventListener('DOMContentLoaded', () => {
+    initQuickEditor();
+});
+    </script>
 </body>
 </html>
