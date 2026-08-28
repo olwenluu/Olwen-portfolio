@@ -752,7 +752,7 @@ const profileData = {
             sectionBadge: "Về bản thân",
             title: "Kiến tạo giá trị thông qua Truyền thông Tích hợp & Kể chuyện Thương hiệu",
             subtitle: "Hành trình kết nối cảm xúc thương hiệu với khách hàng mục tiêu",
-            bioParagraph1: "Chào bạn! Tôi là một Integrated Marketing & Content Specialist <strong>Marketing</strong> với hơn 3+ năm kinh nghiệm thực chiến trong việc hoạch định chiến lược nội dung, triển khai chiến dịch truyền thông đa nền tảng và thúc đẩy tăng trưởng tự nhiên (Organic Growth). Với khả năng bao quát từ khâu lên kịch bản, sản xuất visual đến vận hành hậu cần, tôi chuyên chuyển hóa thông điệp thương hiệu thành những sản phẩm truyền thông giàu tính kết nối và tối ưu điểm chạm khách hàng.",
+            bioParagraph1: "Chào bạn! Tôi là một <strong>Integrated Marketing & Content Specialist</strong> với hơn 3+ năm kinh nghiệm thực chiến trong việc hoạch định chiến lược nội dung, triển khai chiến dịch truyền thông đa nền tảng và thúc đẩy tăng trưởng tự nhiên (Organic Growth). Với khả năng bao quát từ khâu lên kịch bản, sản xuất visual đến vận hành hậu cần, tôi chuyên chuyển hóa thông điệp thương hiệu thành những sản phẩm truyền thông giàu tính kết nối và tối ưu điểm chạm khách hàng.",
             bioParagraph2: "Triết lý làm việc của tôi: <em>'Mọi ý tưởng sáng tạo phải được neo giữ bởi dữ liệu thực tế và đo lường bằng kết quả kinh doanh'</em>. Tôi có thế mạnh đồng thời ở cả hai mảng: <strong>Branding & Storytelling</strong> (xây dựng câu chuyện thương hiệu truyền cảm hứng) và <strong>Content Operations & Performance</strong> (tối ưu hóa quy trình sản xuất đa phương tiện).",
             stats: [
                 { value: "3+", label: "Năm kinh nghiệm", icon: "award" },
@@ -1269,6 +1269,7 @@ const profileData = {
         { src: "assets/images/gallery-4.jpg" }
     ]
 };
+
     </script>
     <script>
 /**
@@ -1316,6 +1317,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initLightbox();
     initContactForm();
     initMobileMenu();
+    initEmailLinks();
 });
 
 /* ==========================================================================
@@ -1375,7 +1377,7 @@ function applyLanguage(lang) {
     
     // Update language switch button text & flag
     if (elements.langText) {
-        elements.langText.textContent = lang === 'vi' ? 'ðŸ‡»ðŸ‡³ VI' : 'ðŸ‡¬ðŸ‡§ EN';
+        elements.langText.textContent = lang === 'vi' ? '🇻🇳 VI' : '🇬🇧 EN';
     }
     elements.html.setAttribute('lang', lang);
 
@@ -1410,6 +1412,7 @@ function applyLanguage(lang) {
 
     // Re-start typewriter animation with new language roles
     initTypewriter(data.hero.roles);
+    initEmailLinks();
 }
 
 /* ==========================================================================
@@ -1455,8 +1458,16 @@ function renderHero(hero) {
     if (greetingEl) greetingEl.textContent = hero.greeting;
     if (nameEl) nameEl.textContent = hero.name;
     if (taglineEl) taglineEl.textContent = hero.tagline;
-    if (ctaProjectsEl) ctaProjectsEl.textContent = hero.ctaProjects;
-    if (ctaContactEl) ctaContactEl.textContent = hero.ctaContact;
+    if (ctaProjectsEl) {
+        const span = ctaProjectsEl.querySelector('span');
+        if (span) span.textContent = hero.ctaProjects;
+        else ctaProjectsEl.textContent = hero.ctaProjects;
+    }
+    if (ctaContactEl) {
+        const span = ctaContactEl.querySelector('span');
+        if (span) span.textContent = hero.ctaContact;
+        else ctaContactEl.textContent = hero.ctaContact;
+    }
     if (statusEl) statusEl.textContent = hero.statusAvailable;
     if (expBadgeEl) expBadgeEl.textContent = hero.experienceBadge;
     if (roasBadgeEl) roasBadgeEl.textContent = hero.roasBadge;
@@ -1792,7 +1803,7 @@ function renderContact(contact) {
         if (phoneLink) phoneLink.href = `tel:${profileData.config.phone.replace(/[\s\-\(\)]/g, '')}`;
     }
     if (locEl) {
-        locEl.textContent = (profileData.config.location && profileData.config.location[state.lang]) || 'Viá»‡t Nam';
+        locEl.textContent = (profileData.config.location && profileData.config.location[state.lang]) || 'Việt Nam';
     }
 }
 
@@ -1803,11 +1814,11 @@ function renderFooter(footer) {
     const headerBrandName = document.getElementById('header-brand-name');
     const year = new Date().getFullYear();
     const brandName = state.lang === 'vi' ? 'YEN LUU' : 'OLWEN LUU';
-    const headerName = state.lang === 'vi' ? 'Yáº¾N LÆ¯U' : 'OLWEN LUU';
+    const headerName = state.lang === 'vi' ? 'YẾN LƯU' : 'OLWEN LUU';
 
     if (headerBrandName) headerBrandName.textContent = headerName;
     if (footerBrandName) footerBrandName.textContent = brandName;
-    if (rightsEl) rightsEl.textContent = `Â© ${year} ${brandName}. ${footer.rights}`;
+    if (rightsEl) rightsEl.textContent = `© ${year} ${brandName}. ${footer.rights}`;
     if (builtEl) builtEl.textContent = footer.builtWith;
 }
 
@@ -2005,7 +2016,7 @@ function showToast(message) {
 }
 
 /* ==========================================================================
-   VISUAL IN-BROWSER QUICK EDITOR (CHá»ˆNH Sá»¬A TRá»°C QUAN Má»ŒI LÃšC Má»ŒI NÆ I)
+   VISUAL IN-BROWSER QUICK EDITOR (CHỈNH SỬA TRỰC QUAN Má»ŒI LÃšC Má»ŒI NÆ I)
    ========================================================================== */
 function initQuickEditor() {
     const editBtn = document.getElementById('open-editor-btn');
@@ -2191,6 +2202,35 @@ function initQuickEditor() {
 document.addEventListener('DOMContentLoaded', () => {
     initQuickEditor();
 });
+
+/* ==========================================================================
+   EMAIL & GMAIL COMPOSER HANDLER
+   ========================================================================== */
+function initEmailLinks() {
+    const email = (profileData.config && profileData.config.email) || 'olwenluu@gmail.com';
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+        link.onclick = function(e) {
+            e.preventDefault();
+            // 1. Copy email to clipboard
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(email).catch(() => {});
+            }
+            // 2. Show toast
+            const msg = state.lang === 'vi' 
+                ? `Đã sao chép email: ${email} & Đang mở hộp thư...` 
+                : `Copied email: ${email} & Opening mailbox...`;
+            showToast(msg);
+
+            // 3. Open Gmail compose directly in a new tab
+            const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
+            const win = window.open(gmailUrl, '_blank');
+            if (!win || win.closed || typeof win.closed === 'undefined') {
+                window.location.href = `mailto:${email}`;
+            }
+        };
+    });
+}
+
     </script>
 </body>
 </html>
